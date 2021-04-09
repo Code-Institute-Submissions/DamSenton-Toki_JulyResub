@@ -1,0 +1,82 @@
+[
+    {
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "crocery",
+            "friendly_name": "Crocery"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "clayton_robbins",
+            "friendly_name": "Clayton Robbins"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "darya_ginger",
+            "friendly_name": "Darya Ginger"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "decorative",
+            "friendly_name": "Decorative"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "jugs",
+            "friendly_name": "Jugs"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "oriento",
+            "friendly_name": "Oriento"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "planters",
+            "friendly_name": "Planters"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "teapots",
+            "friendly_name": "Teapots"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.category",
+        "fields": {
+            "name": "tom_crew",
+            "friendly_name": "Tom Crew"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.category",
+        "fields": {
+            "name": "vases",
+            "friendly_name": "Vases"
+        }
+    }
+]
