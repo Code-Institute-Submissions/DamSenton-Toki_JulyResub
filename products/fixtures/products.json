@@ -1,0 +1,802 @@
+[
+  {
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+      "name": "crocery",
+      "friendly_name": "Crocery"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+      "name": "clayton_robbins",
+      "friendly_name": "Clayton Robbins"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+      "name": "darya_ginger",
+      "friendly_name": "Darya Ginger"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+      "name": "decorative",
+      "friendly_name": "Decorative"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+      "name": "jugs",
+      "friendly_name": "Jugs"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 6,
+    "fields": {
+      "name": "oriento",
+      "friendly_name": "Oriento"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 7,
+    "fields": {
+      "name": "planters",
+      "friendly_name": "Planters"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 8,
+    "fields": {
+      "name": "teapots",
+      "friendly_name": "Teapots"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 9,
+    "fields": {
+      "name": "tom_crew",
+      "friendly_name": "Tom Crew"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 10,
+    "fields": {
+      "name": "vases",
+      "friendly_name": "Vases"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "category": 2,
+      "sku": "AnimalDis-ClaytonRo-Collection",
+      "name": "Clayton Robbins - Animal Dishes",
+      "description": "Handmade decorative dishses featuring glazed animal figures.",
+      "has_sizes": false,
+      "price": "29.99",
+      "rating": "4.50",
+      "image_url": "https://images.unsplash.com/photo-1601430751957-35496fecbcf7?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Nnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "image": "clayton-robbins-animal-dish_y2op4BJ.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "category": 2,
+      "sku": "Decanter-ClaytonRo-Collection",
+      "name": "Clayton Robbins - Decanter",
+      "description": "A beautiful handmade decanter set with a decanter and two cups, glazed with a light pink gradient finish.",
+      "has_sizes": false,
+      "price": "59.99",
+      "rating": "4.70",
+      "image_url": "https://images.unsplash.com/photo-1601430727739-4150d4568f20?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "image": "clayton-robbins-decanter_yDHSYCu.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "category": 2,
+      "sku": "DogPins-ClaytonRo-Collection",
+      "name": "Clayton Robbins - Dog Pins",
+      "description": "Two miniature ceramic dog pins, perfect as a gift.",
+      "has_sizes": false,
+      "price": "19.99",
+      "rating": "4.30",
+      "image_url": "https://images.unsplash.com/photo-1601430878730-7ab5583f60c0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "image": "clayton-robbins-dog-pins_5thrbpT.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+      "category": 2,
+      "sku": "Rabbit-ClaytonRo-Collection",
+      "name": "Clayton Robbins - Rabbit Dish",
+      "description": "A wonderful ceramic rabbit dish, perfect for any child's tea party.",
+      "has_sizes": false,
+      "price": "14.99",
+      "rating": "4.80",
+      "image_url": "https://images.unsplash.com/photo-1601430866396-ec0c21aa837f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "image": "clayton-robbins-rabbit_Nrx1nYk.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+      "category": 2,
+      "sku": "RedMug-ClaytonRo-Collection",
+      "name": "Clayton Robbins - Red Mug",
+      "description": "A signiature style red mug, handcrafted and hand glazed.",
+      "has_sizes": false,
+      "price": "17.99",
+      "rating": "4.90",
+      "image_url": "https://images.unsplash.com/photo-1601430825400-1dd1ba13a9ac?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "image": "clayton-robbins-red-mug_4dVLPP5.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+      "category": 2,
+      "sku": "Snorlax-ClaytonRo-Collection",
+      "name": "Clayton Robbins - Snorlax",
+      "description": "Perfect for any Pokémon fan, this handcrafted Snorlax figurine will fit in any collection.",
+      "has_sizes": false,
+      "price": "24.99",
+      "rating": "4.50",
+      "image_url": "https://images.unsplash.com/photo-1601430854328-26d0d524344a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8M3x8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60",
+      "image": "clayton-robbins-snorlax_2QIj2Ov.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+      "category": 1,
+      "sku": "AnnieSpra-Cup-Crocery",
+      "name": "Annie Spratt - Cup",
+      "description": "Classic handmade cups. Comes as a set of 4.",
+      "has_sizes": false,
+      "price": "24.99",
+      "rating": "4.20",
+      "image_url": "https://i.imgur.com/tp5Sl4I.jpg",
+      "image": "annie-spratt-cup-kitchenware_l2Ypd4U.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+      "category": 1,
+      "sku": "CrissyJar-Caserole-Crocery",
+      "name": "Crissy Jarvis - Caserole Dish",
+      "description": "An eggshell design caserole dish  featuring a 4L capacity.",
+      "has_sizes": false,
+      "price": "49.99",
+      "rating": "4.60",
+      "image_url": "https://i.imgur.com/a50fgxD.jpg",
+      "image": "crissy-jarvis-caserole-kitchenware_jciX4aB.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+      "category": 1,
+      "sku": "FredDupon-Bowls-Crocery",
+      "name": "Frederick Dupont - 12 Piece Crocery Set",
+      "description": "This 12-piece crocery set brings together modern design and classical structures to create a timeless collection perfect for any home.",
+      "has_sizes": false,
+      "price": "74.99",
+      "rating": "4.90",
+      "image_url": "https://i.imgur.com/beCQlgu.jpg",
+      "image": "frederic-dupont-crocery-set-kitchenware.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+      "category": 1,
+      "sku": "GabyYerda-Bowls-Crocery",
+      "name": "Gaby Yerdan - Bowls",
+      "description": "Wonderfully colourful bowls, handcrafted and hand painted. Comes as a set of 4.",
+      "has_sizes": false,
+      "price": "34.99",
+      "rating": "4.50",
+      "image_url": "https://i.imgur.com/78IMzRq.jpg",
+      "image": "gaby-yerden-bowls-kitchenware.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+      "category": 1,
+      "sku": "KazuoOta-Bowls-Crocery",
+      "name": "Kazuo Ota - Bowls",
+      "description": "Finely handcafted bowls that bring colour and life to any table.",
+      "has_sizes": false,
+      "price": "44.99",
+      "rating": "4.70",
+      "image_url": "https://i.imgur.com/NLGpd8o.jpg",
+      "image": "kazuo-ota-bowls-kitchenware.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+      "category": 1,
+      "sku": "Molleni-Plates-Crocery",
+      "name": "Molleni - Fruit Plates",
+      "description": "Perfect for any garden party, these beautifully designed plates bring summer to life. Comes as a set of 5.",
+      "has_sizes": false,
+      "price": "59.99",
+      "rating": "4.20",
+      "image_url": "https://i.imgur.com/xsL0u0f.jpg",
+      "image": "molleni-fruit-plates-kitchenware.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+      "category": 1,
+      "sku": "VivianeOk-Bowls-Crocery",
+      "name": "Viviane Okubo - Bowls",
+      "description": "Traditional ceramic bowls incorporating a variety of styles and techniques. Comes as a set of 4.",
+      "has_sizes": false,
+      "price": "34.99",
+      "rating": "4.10",
+      "image_url": "https://i.imgur.com/asBLirU.jpg",
+      "image": "viviane-okubo-bowl-kitchenware.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+      "category": 8,
+      "sku": "Kazuo-Ota-Teapot-Kitchen",
+      "name": "Kazuo Ota - Teapot",
+      "description": "Featuring a classic deisng, this teapot is a must for any tea lover.",
+      "has_sizes": false,
+      "price": "34.99",
+      "rating": "4.00",
+      "image_url": "https://i.imgur.com/HH6QfDH.jpg",
+      "image": "kazuo-ota-teapot-kitchenware.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+      "category": 8,
+      "sku": "AndrewRod-Teapot-Kitchen",
+      "name": "Andrew Rodin - Teapot",
+      "description": "A simple yet elegenat design, this handcrafted teapot serves 2.",
+      "has_sizes": false,
+      "price": "24.99",
+      "rating": "4.20",
+      "image_url": "https://i.imgur.com/RYdLZMV.jpg",
+      "image": "andrew-rodin-teapot.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+      "category": 8,
+      "sku": "EduardoFr-Teapot-Kitchen",
+      "name": "Eduardo Froza",
+      "description": "A traditional Japanses style teapot with iconic design and handle.",
+      "has_sizes": false,
+      "price": "69.99",
+      "rating": "4.90",
+      "image_url": "https://i.imgur.com/ENs33wO.jpg",
+      "image": "eduardo-froza-teapot.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+      "category": 8,
+      "sku": "Manki-Teapot-Kitchen",
+      "name": "Manki",
+      "description": "A wonderfully hand painted design featuring broad, bold strokes for a contemporary feel.",
+      "has_sizes": false,
+      "price": "74.99",
+      "rating": "4.70",
+      "image_url": "https://i.imgur.com/4HRYxvo.jpg",
+      "image": "manki-kim-teapot.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+      "category": 8,
+      "sku": "NashadAbd-Teapot-Kitchen",
+      "name": "Nashad Abdu - Teapot",
+      "description": "A classic design, hand painted in black. Serves 2.",
+      "has_sizes": false,
+      "price": "34.99",
+      "rating": "3.90",
+      "image_url": "https://i.imgur.com/9JMgQzP.jpg",
+      "image": "nashad-abdu-teapot.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+      "category": 8,
+      "sku": "NataliaVe-Teapot-Kitchen",
+      "name": "Natalia Ventsko - Teapot",
+      "description": "A tall ceramic teapot glazed in white, featuring a ridged design. Serves 6.",
+      "has_sizes": false,
+      "price": "59.99",
+      "rating": "4.00",
+      "image_url": "https://i.imgur.com/OviHF5O.jpg",
+      "image": "natalia-ventskovskaya-teapot.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+      "category": 8,
+      "sku": "RichardIw-Teapot-Kitchen",
+      "name": "Richard Iwaki - Teapot",
+      "description": "This orange teapot is handcrafted from clay and perfect for personal use. Serves 1.",
+      "has_sizes": false,
+      "price": "24.99",
+      "rating": "4.30",
+      "image_url": "https://i.imgur.com/yTUiTcZ.jpg",
+      "image": "richard-iwaki-teapot.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 21,
+    "fields": {
+      "category": 5,
+      "sku": "Moran-Jug-Kitchen",
+      "name": "Moran - Flower Jug",
+      "description": "A classically structured jug featuring a modern flower design.",
+      "has_sizes": false,
+      "price": "74.99",
+      "rating": "4.50",
+      "image_url": "https://i.imgur.com/dRpA9Ru.jpg",
+      "image": "moran-flower-jug-kitchenware.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 22,
+    "fields": {
+      "category": 5,
+      "sku": "KaraEads-Jug-Kitchen",
+      "name": "Kara Eads - White Jug",
+      "description": "A speckeld white milk jug with a modern structure.",
+      "has_sizes": false,
+      "price": "14.99",
+      "rating": "3.90",
+      "image_url": "https://i.imgur.com/iBzMeqy.jpg",
+      "image": "kara-eads-jug-kitchenware.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 23,
+    "fields": {
+      "category": 4,
+      "sku": "Promise-Decorativ-Home",
+      "name": "ANdrew Petrov - Promise",
+      "description": "A moderns sculpture depicting a promise.",
+      "has_sizes": false,
+      "price": "114.99",
+      "rating": "4.80",
+      "image_url": "https://i.imgur.com/yDS01nC.jpg",
+      "image": "andrew-petrov-promsie-decorative.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 24,
+    "fields": {
+      "category": 4,
+      "sku": "Cheetah-Decorativ-Home",
+      "name": "Ceramic Cheetah",
+      "description": "A playful ceramic Cheetah, handmade and hand glazed.",
+      "has_sizes": false,
+      "price": "79.99",
+      "rating": "4.30",
+      "image_url": "https://i.imgur.com/QHcb2B7.jpg",
+      "image": "girl-with-red-hat-cheetah-decorative.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 25,
+    "fields": {
+      "category": 4,
+      "sku": "Seahorse-Decorativ-Home",
+      "name": "Ceramic Seahorse",
+      "description": "A small decorative Seahorse with a contrasting shell.",
+      "has_sizes": false,
+      "price": "49.99",
+      "rating": "4.30",
+      "image_url": "https://i.imgur.com/3ftVBOA.jpg",
+      "image": "girl-with-red-hat-seahorse-decorative.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 26,
+    "fields": {
+      "category": 4,
+      "sku": "Windmill-Decorativ-Home",
+      "name": "Windmill Figurine",
+      "description": "A small hand-painted windmill with blue accents.",
+      "has_sizes": false,
+      "price": "54.99",
+      "rating": "4.10",
+      "image_url": "https://i.imgur.com/aAAHxKy.jpg",
+      "image": "kelly-sikkema-windmill-decorative.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 27,
+    "fields": {
+      "category": 4,
+      "sku": "RedOwl-Decorativ-Home",
+      "name": "Red Owl",
+      "description": "A handmade red ceramic owl figurine.",
+      "has_sizes": false,
+      "price": "39.99",
+      "rating": "4.00",
+      "image_url": "https://i.imgur.com/szV1Fsp.jpg",
+      "image": "zorlu-tuna-owl-decorative.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 28,
+    "fields": {
+      "category": 7,
+      "sku": "KarenTsoi-Planter-Home",
+      "name": "Karen Tsoi - Planter",
+      "description": "A medium size planter for indoor plants. (Plant not included)",
+      "has_sizes": false,
+      "price": "34.99",
+      "rating": "3.70",
+      "image_url": "https://i.imgur.com/2XgNyBZ.jpg",
+      "image": "karen-tsoi-planter-homeware.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 29,
+    "fields": {
+      "category": 7,
+      "sku": "Ktryna-Planter-Home",
+      "name": "Ktryna - Planter",
+      "description": "A smooth glazed ceramic planter for indoor plants. (Plant not included)",
+      "has_sizes": false,
+      "price": "29.99",
+      "rating": "4.80",
+      "image_url": "https://i.imgur.com/CK9h1eN.jpg",
+      "image": "ktryna-planter-homeware.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 30,
+    "fields": {
+      "category": 7,
+      "sku": "Olia-Planter-Home",
+      "name": "Olia - Cactus/Succulent Pot",
+      "description": "A small planter, perfect for cacti or succulents. (Plant not included)",
+      "has_sizes": false,
+      "price": "14.99",
+      "rating": "4.90",
+      "image_url": "https://i.imgur.com/5L9b4Z1.jpg",
+      "image": "olia-gozha-cactus-pot-homeware.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 31,
+    "fields": {
+      "category": 7,
+      "sku": "RobertWei-Planter-Home",
+      "name": "Lavender Planter",
+      "description": "A large pot fashioned as a lavender planter, perfect for indoor or outdoor use. (Plant not included)",
+      "has_sizes": false,
+      "price": "54.99",
+      "rating": "4.30",
+      "image_url": "https://i.imgur.com/j6oLjdL.jpg",
+      "image": "robert-wiedemann-jug-homeware.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 32,
+    "fields": {
+      "category": 7,
+      "sku": "Aztec-Planter-Home",
+      "name": "Aztec Planter",
+      "description": "A small planter for indoor use featuring a traditional aztec design. (Plant not included)",
+      "has_sizes": false,
+      "price": "34.99",
+      "rating": "4.20",
+      "image_url": "https://i.imgur.com/KD7JcNZ.jpg",
+      "image": "scott-webb-aztec-planter-homeware.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 33,
+    "fields": {
+      "category": 10,
+      "sku": "Simple-Vase-Home",
+      "name": "Simple White Vase",
+      "description": "With it's simple design, this white vase is perfect for any room. (Plant not included)",
+      "has_sizes": false,
+      "price": "19.99",
+      "rating": "4.60",
+      "image_url": "https://i.imgur.com/wB0AZon.jpg",
+      "image": "white-vase-homeware.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 34,
+    "fields": {
+      "category": 3,
+      "sku": "DaryaGing-Bowl-Collectio",
+      "name": "Darya Ginger - Bowl",
+      "description": "This handcrafted bowl from Darya Ginger features a classic Japanese style. Comes with lid and saucer.",
+      "has_sizes": false,
+      "price": "79.99",
+      "rating": "4.60",
+      "image_url": "https://i.imgur.com/cp65Xci.jpg",
+      "image": "darya-ginger-bowl.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 35,
+    "fields": {
+      "category": 3,
+      "sku": "DaryaGing-Bowl-Set-Collectio",
+      "name": "Darya Ginger - Bowl Set",
+      "description": "This set from Darya Ginger fits into any contemporary home. This classic Japanese miso bowl comes with the serving slate and cup.",
+      "has_sizes": false,
+      "price": "119.99",
+      "rating": "4.80",
+      "image_url": "https://i.imgur.com/sOzcuvB.jpg",
+      "image": "darya-ginger-bowl-set.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 36,
+    "fields": {
+      "category": 3,
+      "sku": "DaryaGing-FaceVases-Collectio",
+      "name": "Darya Ginger - VAses",
+      "description": "These bespoke vases are made custom for each purchase.\r\nThis modern design features classic Japanese influences.\r\n1 vase per purchase.",
+      "has_sizes": false,
+      "price": "149.99",
+      "rating": "4.60",
+      "image_url": "https://i.imgur.com/Gj2wlm4.jpg",
+      "image": "darya-ginger-face-vases.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 37,
+    "fields": {
+      "category": 3,
+      "sku": "DaryaGing-Mugs-Collectio",
+      "name": "Darya Ginger - Mugs",
+      "description": "These striking mugs are hand made and hand glazed using various techniques to create a one of a kind design.\r\nThese mugs come as a set of two.",
+      "has_sizes": false,
+      "price": "89.99",
+      "rating": "4.80",
+      "image_url": "https://i.imgur.com/zwEPJJq.jpg",
+      "image": "darya-ginger-mugs.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 38,
+    "fields": {
+      "category": 6,
+      "sku": "Oriento-sq-vase-Collectio",
+      "name": "Oriento - Square Vase",
+      "description": "A handmade cobalt blue square vase.",
+      "has_sizes": false,
+      "price": "79.99",
+      "rating": "4.60",
+      "image_url": "https://i.imgur.com/YmEzZAy.jpg",
+      "image": "oriento-blue-sq-vase-collections.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 39,
+    "fields": {
+      "category": 6,
+      "sku": "Oriento-Incense-Collectio",
+      "name": "Oriento - Incense Burner",
+      "description": "This wonderful handcrafted and hand painted incense burner is perfect for those looking to relax in style.",
+      "has_sizes": false,
+      "price": "84.99",
+      "rating": "4.50",
+      "image_url": "https://i.imgur.com/HJkR3iN.jpg",
+      "image": "oriento-incense-collections.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 40,
+    "fields": {
+      "category": 6,
+      "sku": "Oriento-lion-Collectio",
+      "name": "Oriento - Lion",
+      "description": "A classic hand crafted Chinese Lion sculpture.",
+      "has_sizes": false,
+      "price": "94.99",
+      "rating": "4.30",
+      "image_url": "https://i.imgur.com/t4TiBd1.jpg",
+      "image": "oriento-lion-collections.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 41,
+    "fields": {
+      "category": 6,
+      "sku": "Oriento-red-vase-Collectio",
+      "name": "Oriento - Red Vase",
+      "description": "A stunning red vase combining harsh edges and smooth sides, finished with a wonderful graident effect.",
+      "has_sizes": false,
+      "price": "109.99",
+      "rating": "4.90",
+      "image_url": "https://i.imgur.com/mfObmNM.jpg",
+      "image": "oriento-red-vase-collections.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 42,
+    "fields": {
+      "category": 6,
+      "sku": "Oriento-round-vas-Collectio",
+      "name": "Oriento - Round Vase",
+      "description": "A perfectly rounded cylindrical vase finished with an eye-catching blue and black design.",
+      "has_sizes": false,
+      "price": "84.99",
+      "rating": "4.20",
+      "image_url": "https://i.imgur.com/axeFJ5g.jpg",
+      "image": "oriento-round-vase-collections.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 43,
+    "fields": {
+      "category": 6,
+      "sku": "Oriento-tall-vase-Collectio",
+      "name": "Oriento - Tall Vase",
+      "description": "An elegantly tall vase with dramatic edges and an oxidising effect finish.",
+      "has_sizes": false,
+      "price": "169.99",
+      "rating": "4.90",
+      "image_url": "https://i.imgur.com/4r2InZS.jpg",
+      "image": "oriento-tall-vase-collections.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 44,
+    "fields": {
+      "category": 9,
+      "sku": "TomCrew-cereal-Collectio",
+      "name": "Tom Crew - Cereal Set",
+      "description": "This modern cereal set features a bowl and two cups with a minimalist design.",
+      "has_sizes": false,
+      "price": "39.99",
+      "rating": "4.20",
+      "image_url": "https://i.imgur.com/Dm4MUcu.jpg",
+      "image": "tom-crew-cereal-set-collections.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 45,
+    "fields": {
+      "category": 9,
+      "sku": "TomCrew-decanter-Collectio",
+      "name": "Tom Crew - Decanter",
+      "description": "A simplistic decanter with two cups.",
+      "has_sizes": false,
+      "price": "59.99",
+      "rating": "4.00",
+      "image_url": "https://i.imgur.com/FaDypyi.jpg",
+      "image": "tom-crew-decanter-collections.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 46,
+    "fields": {
+      "category": 9,
+      "sku": "TomCrew-jars-Collectio",
+      "name": "Tom Crew - Condiment Jars",
+      "description": "A set of two condiment jars with a minimalist design.",
+      "has_sizes": false,
+      "price": "49.99",
+      "rating": "4.10",
+      "image_url": "https://i.imgur.com/tO1cENZ.jpg",
+      "image": "tom-crew-jars-collections.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 47,
+    "fields": {
+      "category": 9,
+      "sku": "TomCrew-mugs-Collectio",
+      "name": "Tom Crew - Mugs",
+      "description": "Classic musg with a minimalist deisng. Set of 2.",
+      "has_sizes": false,
+      "price": "29.99",
+      "rating": "4.10",
+      "image_url": "https://i.imgur.com/gXZ4I7e.jpg",
+      "image": "tom-crew-mugs-collections.jpg"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 48,
+    "fields": {
+      "category": 9,
+      "sku": "TomCrew-pots-Collectio",
+      "name": "Tom Crew - Pots",
+      "description": "Simple pots for sugar and other condiments.",
+      "has_sizes": false,
+      "price": "24.99",
+      "rating": "3.80",
+      "image_url": "https://i.imgur.com/mQ1HvmG.jpg",
+      "image": "tom-crew-pots-collections.jpg"
+    }
+  }
+]
