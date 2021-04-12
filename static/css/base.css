@@ -6,7 +6,7 @@ body{
     background: url('/media/landing-page.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #fafafa;
+    color: black;
 }
 
 h1,h2,h3,h4,h5{
@@ -21,9 +21,8 @@ p{
     text-align: center;
 }
 
-/* Navbar and buttons */
+/* Navbar */
 
-/* from Bulma */
 .icon {
     align-items: center;
     display: inline-flex; 
@@ -35,6 +34,9 @@ p{
 .logo-font {
     text-transform: uppercase;
 }
+
+
+/* Buttons */
 
 .main-logo-link {
     width: fit-content;
@@ -54,7 +56,7 @@ p{
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important;
     border: 1px solid black;
 }
 
@@ -75,6 +77,8 @@ p{
     color: white;
 }
 
+/* Colours */
+
 .text-black {
     color: #000 !important;
 }
@@ -83,7 +87,30 @@ p{
     border: 1px solid black !important;
 }
 
+.bg-white{
+    background: #fafafa !important;
+}
 
+/* Products Page */
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #fafafa;
+    z-index: -1;
+}
+
+.card-img-top{
+    min-height: 20rem;
+    max-height: 20rem;
+}
+
+.card-body{
+    background: #fafafa;
+}
 
 /* Media Queries */
 

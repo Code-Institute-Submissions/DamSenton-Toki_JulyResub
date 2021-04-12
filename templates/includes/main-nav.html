@@ -12,9 +12,9 @@
                 Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -25,10 +25,10 @@
                 Homeware
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Planters</a>
-                <a href="" class="dropdown-item">Vases</a>
-                <a href="" class="dropdown-item">Decorative</a>
-                <a href="" class="dropdown-item">All Homeware</a>
+                <a href="{% url 'products' %}?category=planters" class="dropdown-item">Planters</a>
+                <a href="{% url 'products' %}?category=vases" class="dropdown-item">Vases</a>
+                <a href="{% url 'products' %}?category=decorative" class="dropdown-item">Decorative</a>
+                <a href="{% url 'products' %}?category=planters,vases,decorative" class="dropdown-item">All Homeware</a>
             </div>
         </li>
 
@@ -38,10 +38,10 @@
                 Kitchenware
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Crocery</a>
-                <a href="" class="dropdown-item">Teapots</a>
-                <a href="" class="dropdown-item">Jugs</a>
-                <a href="" class="dropdown-item">All Kitchenware</a>
+                <a href="{% url 'products' %}?category=crocery" class="dropdown-item">Crocery</a>
+                <a href="{% url 'products' %}?category=teapots" class="dropdown-item">Teapots</a>
+                <a href="{% url 'products' %}?category=jugs" class="dropdown-item">Jugs</a>
+                <a href="{% url 'products' %}?category=crocery,teapots,jugs" class="dropdown-item">All Kitchenware</a>
             </div>
         </li>
 
@@ -51,10 +51,10 @@
                 Collections
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Clayton Robbins</a>
-                <a href="" class="dropdown-item">Darya Ginger</a>
-                <a href="" class="dropdown-item">Oriento</a>
-                <a href="" class="dropdown-item">Tom Crew</a>
+                <a href="{% url 'products' %}?category=clayton_robbins" class="dropdown-item">Clayton Robbins</a>
+                <a href="{% url 'products' %}?category=darya_ginger" class="dropdown-item">Darya Ginger</a>
+                <a href="{% url 'products' %}?category=oriento" class="dropdown-item">Oriento</a>
+                <a href="{% url 'products' %}?category=tom_crew" class="dropdown-item">Tom Crew</a>
                 <a href="" class="dropdown-item">All Collections</a>
             </div>
         </li>
