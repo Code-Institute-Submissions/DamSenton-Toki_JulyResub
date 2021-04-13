@@ -3,9 +3,9 @@ html{
 }
 
 body{
-    background: url('/media/landing-page.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
+    /* background: url('/media/landing-page.jpg') no-repeat center center fixed; */
+    /* background-size: cover; */
+    /* height: calc(100vh - 164px); */
     color: black;
 }
 
@@ -77,6 +77,43 @@ p{
     color: white;
 }
 
+/*-------------- Back to top buttons (courtesy of https://heathertovey.com/blog/floating-back-to-top-button/) ------ */
+
+.back-to-top {
+    background-color: #000000;
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity .6s ease-in-out;
+    z-index: 999;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 0%;
+}
+
+a.back-to-top {
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.6;
+    padding-left: 2px;
+    padding-top: 14px;
+    border-radius: 50%;
+}
+
+.back-to-top:hover {
+    background-color: #999999;
+    color: #000000;
+}
+
+.back-to-top.show {
+    opacity: 1;
+}
+
 /* Colours */
 
 .text-black {
@@ -89,6 +126,25 @@ p{
 
 .bg-white{
     background: #fafafa !important;
+}
+
+/* Landing Page */
+
+.carousel-inner{
+    height: 45rem;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    
+}
+
+.carousel-inner img{
+    height: 45rem;
+    width: 100%;
+}
+
+.carousel-caption{
+    z-index: 999;
 }
 
 /* Products Page */
