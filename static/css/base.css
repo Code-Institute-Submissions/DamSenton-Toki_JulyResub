@@ -3,9 +3,7 @@ html{
 }
 
 body{
-    /* background: url('/media/landing-page.jpg') no-repeat center center fixed; */
-    /* background-size: cover; */
-    /* height: calc(100vh - 164px); */
+    background-color: #fafafa;
     color: black;
 }
 
@@ -19,6 +17,10 @@ p{
 
 .center-align{
     text-align: center;
+}
+
+header{
+    background-color: #fafafa !important;
 }
 
 /* Navbar */
@@ -42,7 +44,7 @@ p{
     width: fit-content;
 }
 
-.shop-now-button {
+.carousel-button {
     background: black;
     color: white;
     min-width: 160px;
@@ -130,8 +132,13 @@ a.back-to-top {
 
 /* Landing Page */
 
+.carousel{
+    height: 32rem;
+    width: 100%;
+}
+
 .carousel-inner{
-    height: 45rem;
+    height: 32rem;
     overflow: hidden;
     position: relative;
     align-items: center;
@@ -139,13 +146,15 @@ a.back-to-top {
 }
 
 .carousel-inner img{
-    height: 45rem;
+    height: 32rem;
     width: 100%;
 }
 
-.carousel-caption{
-    z-index: 999;
+.carousel-caption a{
+    margin-top: 1rem;
 }
+
+
 
 /* Products Page */
 
@@ -171,6 +180,12 @@ a.back-to-top {
 /* Media Queries */
 
 /* Slightly larger container on XL screens */
+
+@media (min-width:1500px){
+    .carousel, .carousel-inner, .carousel-inner img{
+        height: 40rem;
+    }
+}
 
 @media(min-width:1200px){
     .container{
