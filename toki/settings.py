@@ -45,8 +45,9 @@ INSTALLED_APPS = [
     'home',
     'blog',
     'products',
+    'checkout',
     'bag',
-    'crispy_forms'
+    'crispy_forms',
 
 ]
 
@@ -61,6 +62,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'toki.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
