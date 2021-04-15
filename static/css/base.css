@@ -173,8 +173,45 @@ a.back-to-top {
     max-height: 20rem;
 }
 
+.details-image{
+    height: 35rem;
+    width: auto;
+}
+
 .card-body{
     background: #fafafa;
+}
+
+/* Bag */
+
+.bag-image{
+    height: 20rem;
+    width: auto;
+}
+
+.update-link{
+    cursor: pointer;
+}
+
+.remove-item{
+    cursor: pointer;
+}
+
+/* Bootstrap Toasts */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
 }
 
 /* Media Queries */
