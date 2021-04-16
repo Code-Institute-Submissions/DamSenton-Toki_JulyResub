@@ -1,33 +1,15 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
-import json
-import stripe
-from bag.contexts import bag_contents
-from products.models import Product
-from .models import Order, OrderLineItem
-from django.conf import settings
 from django.views.decorators.http import require_POST
-from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
+from django.conf import settings
 
 from .forms import OrderForm
+from .models import Order, OrderLineItem
+from products.models import Product
+from bag.contexts import bag_contents
 
-
-def checkout(request):
-    bag = request.session.get('bag', {})
-    if not bag:
-        messages.error(request, "There's nothing in your bag at the moment")
-        return redirect(reverse('products'))
-
-    order_form = OrderForm()
-    template = 'checkout/checkout.html'
-    context = {
-        'order_form': order_form,
-        'stripe_public_key': 'pk_test_51IVIbjFuMlja0IxW1aICb6HTWXwVOqlO4tbwfMY93awUoWHMcSLmA81ni4ExUTXuWdeRiIhgd7kRM5LfwhTxJmrr00SS4mb0lc',
-        'client_secret': 'sk_test_51IVIbjFuMlja0IxWlUC7LzN32oD350KggBD6tTE9giGxohKqeDpII8O4W3yRlGJ3mP6WovldDx0DIy3g5ZQ944H10096aiFnr3',
-    }
-
-    return render(request, template, context)
-
+import stripe
+import json
 
 @require_POST
 def cache_checkout_data(request):
@@ -106,8 +88,7 @@ def checkout(request):
     else:
         bag = request.session.get('bag', {})
         if not bag:
-            messages.error(
-                request, "There's nothing in your bag at the moment")
+            messages.error(request, "There's nothing in your bag at the moment")
             return redirect(reverse('products'))
 
         current_bag = bag_contents(request)
