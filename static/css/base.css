@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    background-color: #fafafa;
+    background-color: #d0fae1;
     color: black;
 }
 
@@ -20,7 +20,7 @@ p{
 }
 
 header{
-    background-color: #fafafa !important;
+    background-color: #d0fae1 !important;
 }
 
 /* Navbar */
@@ -127,7 +127,7 @@ a.back-to-top {
 }
 
 .bg-white{
-    background: #fafafa !important;
+    background: #d0fae1 !important;
 }
 
 /* Landing Page */
@@ -164,7 +164,7 @@ a.back-to-top {
     top: 0;
     left: 0;
     position: fixed;
-    background: #fafafa;
+    background: #d0fae1;
     z-index: -1;
 }
 
@@ -179,7 +179,7 @@ a.back-to-top {
 }
 
 .card-body{
-    background: #fafafa;
+    background: #d0fae1;
 }
 
 /* Bag */
@@ -332,14 +332,5 @@ a.back-to-top {
 
     .header-container {
         padding-top: 164px;
-    }
-}
-
-/* allauth forms */
-@media (min-width: 768px){
-.col-md-6 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 80%;
-    max-width: 100%;
     }
 }
