@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    background-color: #d0fae1;
+    background-color: #fafafa;
     color: black;
 }
 
@@ -20,10 +20,22 @@ p{
 }
 
 header{
-    background-color: #d0fae1 !important;
+    background-color: #fafafa !important;
+}
+
+.container, .container-fluid{
+    margin-top: 8rem;
 }
 
 /* Navbar */
+
+.navbar{
+    text-align: center;
+}
+
+.main-logo{
+    font-size: 3rem;
+}
 
 .icon {
     align-items: center;
@@ -37,6 +49,23 @@ header{
     text-transform: uppercase;
 }
 
+.nav-item{
+    text-align: center;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+#deliver-banner{
+    bottom: 0;
+}
+
+#delivery-banner h4{
+    font-size: 1rem;
+}
+
+.bg-black{
+    background: black !important;
+}
 
 /* Buttons */
 
@@ -127,34 +156,14 @@ a.back-to-top {
 }
 
 .bg-white{
-    background: #d0fae1 !important;
+    background: #fafafa !important;
 }
 
 /* Landing Page */
 
-.carousel{
-    height: 32rem;
-    width: 100%;
+.carousel, .carousel-inner, .carousel-inner img {
+    height: 40rem;
 }
-
-.carousel-inner{
-    height: 32rem;
-    overflow: hidden;
-    position: relative;
-    align-items: center;
-    
-}
-
-.carousel-inner img{
-    height: 32rem;
-    width: 100%;
-}
-
-.carousel-caption a{
-    margin-top: 1rem;
-}
-
-
 
 /* Products Page */
 
@@ -164,7 +173,7 @@ a.back-to-top {
     top: 0;
     left: 0;
     position: fixed;
-    background: #d0fae1;
+    background: #fafafa;
     z-index: -1;
 }
 
@@ -179,7 +188,7 @@ a.back-to-top {
 }
 
 .card-body{
-    background: #d0fae1;
+    background: #fafafa;
 }
 
 /* Bag */
@@ -329,8 +338,10 @@ a.back-to-top {
         left: 0;
         z-index: 1030;
     }
+}
 
-    .header-container {
-        padding-top: 164px;
+@media (min-width: 1500px){
+.carousel, .carousel-inner, .carousel-inner img {
+    height: 50rem;
     }
 }
