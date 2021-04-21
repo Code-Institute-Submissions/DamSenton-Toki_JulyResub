@@ -165,6 +165,18 @@ a.back-to-top {
     height: 40rem;
 }
 
+.carousel-item-1{
+    background: url('media/carousel-image-1.jpg');
+}
+
+.carousel-item-2{
+    background: url('media/carousel-image-2.jpg');
+}
+
+.carousel-item-3{
+    background: url('media/carousel-image-3.jpg');
+}
+
 /* Products Page */
 
 .overlay{
