@@ -51,7 +51,8 @@ header{
 
 .nav-item{
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid rgb(71, 71, 71);
+    border-radius: 10px;
     margin: 5px;
 }
 
@@ -81,20 +82,20 @@ header{
 }
 
 .btn-black {
-    background: black;
+    background: #222;
     color: white;
 }
 
 .btn-outline-black {
     background: white;
     color: black !important;
-    border: 1px solid black;
+    border: 1px solid #222;
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
+    background: #222;
     color: white !important;
 }
 
@@ -165,6 +166,11 @@ a.back-to-top {
     height: 40rem;
 }
 
+.home-image{
+    height: 20rem;
+    width: 30rem;
+}
+
 
 /* Products Page */
 
@@ -178,9 +184,21 @@ a.back-to-top {
     z-index: -1;
 }
 
+.product-card{
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+.card{
+    padding: 0.2rem;
+    background-color: #fafafa;
+}
+
 .card-img-top{
     min-height: 20rem;
     max-height: 20rem;
+    border-radius: 10px;
+
 }
 
 .details-image{
@@ -205,6 +223,117 @@ a.back-to-top {
 
 .remove-item{
     cursor: pointer;
+}
+
+/*----------------------- Block Divider (courtesy of https://codepen.io/stg/pen/ZYYQMJ) ------------------------- */
+
+.divider {								/* minor cosmetics */
+    display: table; 
+    font-size: 24px; 
+    text-align: center; 
+    width: 75%; 						/* divider width */
+    margin: 40px auto;					/* spacing above/below */
+    background-color: #fafafa;
+}
+.divider span { display: table-cell; position: relative; }
+.divider span:first-child, .divider span:last-child {
+    width: 50%;
+    top: 13px;							/* adjust vertical align */
+    -moz-background-size: 100% 2px; 	/* line width */
+    background-size: 100% 2px; 			/* line width */
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+}
+.divider span:first-child {				/* color changes in here */
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#000));
+    background-image: -webkit-linear-gradient(180deg, transparent, #000);
+    background-image: -moz-linear-gradient(180deg, transparent, #000);
+    background-image: -o-linear-gradient(180deg, transparent, #000);
+    background-image: linear-gradient(90deg, transparent, #000);
+}
+.divider span:nth-child(2) {
+    color: #000; padding: 0px 5px; width: auto; white-space: nowrap;
+}
+.divider span:last-child {				/* color changes in here */
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transparent));
+    background-image: -webkit-linear-gradient(180deg, #000, transparent);
+    background-image: -moz-linear-gradient(180deg, #000, transparent);
+    background-image: -o-linear-gradient(180deg, #000, transparent);
+    background-image: linear-gradient(90deg, #000, transparent);
+}
+
+/*------------------ Footer----------------- */
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+  
+  margin-top: 5rem;
+  background-color: transparent;
+}
+
+
+footer ul {
+  margin: 0;
+}
+
+.footer-flex {
+  display: flex;
+  min-height: 45vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer ul {
+  margin: 0;
+}
+
+.social-media {
+  text-align: center;
+  bottom: 5px;
+  padding: 0;
+}
+
+.social-media li {
+  display: inline;
+  text-decoration: none;
+}
+
+.social-media i {
+  font-size: 2rem;
+  letter-spacing: 0px;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin: 1%;
+  text-decoration: none;
+  color: #272727;
+  bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .social-media i {
+    position: relative;
+    font-size: 2vmax ;
+    letter-spacing: 0px;
+    padding: 20px;
+    margin: 1%;
+    text-decoration: none;
+    color: #272727;
+    bottom: 0px;
+  }
+}
+
+footer p{
+   font-size: 1vmax !important;
+   margin: 10px;
+}
+
+.copyright {
+  text-align: center;
+  color: #272727;
+  
 }
 
 /* Bootstrap Toasts */
