@@ -1,0 +1,80 @@
+[
+    {
+        "pk": 1,
+        "model": "articles.articles",
+        "fields": {
+            "date": "2021-04-24",
+            "title": "Style or substance?",
+            "slug": "style-or-substance",
+            "article_image": "",
+            "intro": "Struggling to find your niche? These tips will help you find your flow!",
+            "article_content": "TETETSTSTSTSTSTSTST"
+        }
+        
+    },
+    {
+        "pk": 2,
+        "model": "articles.articles",
+        "fields": {
+            "date": "2021-03-19",
+            "title": "test 1",
+            "slug": "test-1",
+            "article_image": "",
+            "intro": "",
+            "article_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim"
+        }
+        
+    },
+    {
+        "pk": 3,
+        "model": "articles.articles",
+        "fields": {
+            "date": "2021-03-19",
+            "title": "test 2",
+            "slug": "test-2",
+            "article_image": "",
+            "intro": "",
+            "article_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim"
+        }
+        
+    },
+    {
+        "pk": 4,
+        "model": "articles.articles",
+        "fields": {
+            "date": "2021-03-19",
+            "title": "test 3",
+            "slug": "test-3",
+            "article_image": "",
+            "intro": "",
+            "article_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim"
+        }
+        
+    },
+    {
+        "pk": 5,
+        "model": "articles.articles",
+        "fields": {
+            "date": "2021-03-19",
+            "title": "test 4",
+            "slug": "test-4",
+            "article_image": "",
+            "intro": "",
+            "article_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim"
+        }
+        
+    },
+    {
+        "pk": 6,
+        "model": "articles.articles",
+        "fields": {
+            "date": "2021-03-19",
+            "title": "test 5",
+            "slug": "test-5",
+            "article_image": "",
+            "intro": "",
+            "article_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim"
+        }
+        
+    }
+]

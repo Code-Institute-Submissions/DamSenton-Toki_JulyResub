@@ -1,0 +1,14 @@
+<div class="article-card">
+    <div class="article-card-image">
+        <a href="{% url 'individual_article' article.slug %}">
+            
+        </a>
+    </div>
+    <p class="mt-1">
+        published on {{ article.date }}
+    </p>
+    <h2 class="article-card-title">
+        <a href="{% url 'individual_article' article.slug %}" class="title-link">{{ article.title }}</a>
+    </h2>
+    <p>{{ article.intro|truncatechars:180 }}</p>
+</div>

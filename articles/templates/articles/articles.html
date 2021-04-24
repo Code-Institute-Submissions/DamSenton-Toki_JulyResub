@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block extra_title %}
+Talks
+{% endblock %}
+
+{% block page_header %}
+<div class="w-100 article-header-image"></div>
+{% endblock %}
+
+{% block content %}
+
+<section class="articles">
+    <div class="container container-fluid">
+        <div class="container article-header">
+            <div class="row center-align">
+                <h1 class="text-center">TŌKI Talks</h1>
+            </div>
+            <div class="row mt-3">
+                <div class="container">
+                    <p>
+                        Here at TŌKI we are always striving to bring you the best of the ceramic world.<br>
+                        Our talented writers and potters write weekly blogs to keep you in the know about new styles,
+                        techniques and hidden gems from around the world.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider mt-5"><span></span><span>
+        <h4>Articles</h4>
+    </span><span></span></div>
+
+<section>
+    <div class="container">
+        <div class="row articles-row center-align">
+            {% if articles %}
+            {% for article in articles %}
+            <div class="col-12 mb-3">
+                {% include 'articles/includes/article_card.html' %}
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

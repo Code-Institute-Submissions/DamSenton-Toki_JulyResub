@@ -17,15 +17,20 @@ p{
 
 .center-align{
     text-align: center;
+    justify-content: center;
 }
 
 header{
     background-color: #fafafa !important;
 }
 
-.container, .container-fluid{
+/* .container, .container-fluid{
     margin-top: 8rem;
-}
+} */
+
+main{
+    margin-top: 11rem;
+}   
 
 /* Navbar */
 
@@ -163,7 +168,7 @@ a.back-to-top {
 /* Landing Page */
 
 .carousel, .carousel-inner, .carousel-inner img {
-    height: 40rem;
+    height: 45rem;
 }
 
 .home-image{
@@ -185,7 +190,6 @@ a.back-to-top {
 }
 
 .product-card{
-    border: 1px solid black;
     margin-bottom: 1rem;
 }
 
@@ -223,6 +227,21 @@ a.back-to-top {
 
 .remove-item{
     cursor: pointer;
+}
+
+/* Blog */
+
+.articles{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.article-header-image{
+    height: 20rem;
+    background: url("https://source.unsplash.com/random") no-repeat center;
+    margin-top: 11rem;
+    width: 100%;
+    
 }
 
 /*----------------------- Block Divider (courtesy of https://codepen.io/stg/pen/ZYYQMJ) ------------------------- */
