@@ -6,42 +6,59 @@
 Talks
 {% endblock %}
 
+{% block page_header %}
+<div class="w-100 article-header-image"></div>
+{% endblock %}
+
 {% block content %}
+<main>
+    <section>
+        <div class="container-fluid">
+            <div class="container">
 
-<section>
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="container">
-                    <p class="paragraph-margin blog-post-publishing-details">
-                        published on {{ articles.date }}
-                    </p>
+                <div class="row">
+                    <img src="" alt="">
+                </div>
 
+                <div class="row center-align">
+                    <h1 class="h1-style text-center mt-3">{{ articles.title }}</h1>
                 </div>
-            </div>
-            <div class="row">
-                <h1 class="h1-style text-center mt-3">{{ articles.title }}</h1>
-            </div>
+                <div class="row">
+                    <div class="container">
+                        <p class="paragraph-margin blog-post-publishing-details">
+                            <small>published on {{ articles.date }}</small>
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="container">
+                        <p class="paragraph-margin">
+                            {{ articles.intro }}
+                        </p>
+                    </div>
+                </div>
 
-            <div class="row mt-3">
-                <div class="container">
-                    <p class="paragraph-margin">
-                        {{ articles.intro }}
-                    </p>
+                <div class="row mt-3">
+                    <div class="container">
+                        <p class="paragraph-margin">
+                            {{ articles.article_content }}
+                        </p>
+                    </div>
                 </div>
+
             </div>
-            
-            <div class="row mt-3">
-                <div class="container">
-                    <p class="paragraph-margin">
-                        {{ articles.article_content }}
-                    </p>
-                </div>
+            <div class="row center-align">
+                <a href="{% url 'articles' %}" class="btn btn-black rounded-0 my-2">
+                    <span class="icon mr-2">
+                        <i class="fas fa-gifts"></i>
+                    </span>
+                    <span class="text-uppercase">Back to TŌKI Talks</span>
+                </a>
             </div>
-            
         </div>
-    </div>
-</section>
+
+    </section>
+</main>
 
 
 {% endblock %}
