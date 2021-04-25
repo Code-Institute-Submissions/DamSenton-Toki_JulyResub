@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}New Article{% endblock %}
+
+{% block content %}
+    <div class="mb-5">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Create a new article</h1>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="new-article-div">
+                    <form class="mt-3" action="{% url 'new_article' %}" method="POST" enctype="multipart/form-data" id="new-article-form">
+                        {% csrf_token %}
+                        {% for field in form %}
+                            {% if field.name != 'image' %}
+                                {{ field | as_crispy_field }}
+                            {% else %}
+                                {{ field }}
+                            {% endif %}
+                        {% endfor %}
+                        <div class="div-buttons mt-5">
+                            <button class="rounded-0" type="submit">Add new article</button>
+                            <a class="rounded-0" href="{% url 'articles' %}">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

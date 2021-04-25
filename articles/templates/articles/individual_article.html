@@ -28,6 +28,12 @@ Talks
                         <p class="paragraph-margin blog-post-publishing-details">
                             <small>published on {{ articles.date }}</small>
                         </p>
+                        {% if request.user.is_superuser %}
+                            <small class="ml-3">
+                            <a href="{% url 'edit_article' articles.slug %}">Edit</a>
+                            <a href="{% url 'delete_article' articles.slug %}" class="text-danger">Delete</a>
+                        </small>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="row mt-3">

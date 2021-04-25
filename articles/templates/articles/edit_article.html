@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Edit Blog Post{% endblock %}
+
+{% block content %}
+    <div class="mb-5">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Edit article</h1>
+                <div class=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="">
+                    <form class="mt-3" action="{% url 'edit_article' article.slug %}" method="POST" enctype="multipart/form-data" id="">
+                        {% csrf_token %}
+                        {% for field in form %}
+                            {% if field.name != 'image' %}
+                                {{ field | as_crispy_field }}
+                            {% else %}
+                                {{ field }}
+                            {% endif %}
+                        {% endfor %}
+                        <div class="mt-5">
+                            <button class="rounded-0" type="submit">Edit Article</button>
+                            <a class="btn rounded-0" href="{% url 'articles' %}">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
