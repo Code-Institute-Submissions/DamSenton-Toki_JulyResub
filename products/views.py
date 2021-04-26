@@ -75,7 +75,7 @@ def product_detail(request, product_id):
 
     context = {
         'product': product,
-        'produt_review_form': product_review_form,
+        'product_review_form': product_review_form,
         'reviews': reviews,
     }
 
@@ -150,7 +150,7 @@ def delete_product(request, product_id):
 
 def new_product_review(request, product_id):
     """
-    A view to allow customers to rate 
+    A view to allow customers to rate
     a product if they are logged in
     """
     product = get_object_or_404(Product, pk=product_id)
@@ -162,8 +162,8 @@ def new_product_review(request, product_id):
             review.product = product
             review.user = request.user
             review.save()
-            messages.info(
+            messages.success(
                 request, "f' Thank you for leaving a review for {product.name} ")
             return redirect(reverse('product_detail', args=[product_id]))
-
+    print(product_review_form)
     return redirect(reverse('product_detail', args=[product_id]))
