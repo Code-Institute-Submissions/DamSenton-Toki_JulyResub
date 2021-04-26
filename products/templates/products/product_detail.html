@@ -138,26 +138,26 @@
                                 <div class="mt-2"><p><strong>{{ review.subject }}</strong></p></div>
                             </div>
                             <div class="review-body">
-                                {{ review.review }}
+                                {{ review.reviews }}
                             </div>
                         </div>
                         <hr>
                     {% endfor %}
                 {% else %}
-                    <p>Be the first to review this product</p>
+                    <p>No reviews</p>
                 {% endif %}
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-4 form-bg p-3">
                 <h5 class="text-uppercase">Write a review</h5>
                 <form action="{% url 'new_product_review' product.id %}" method="POST" class="form-group review-form">
                     {% csrf_token %}
-                    {{ form|crispy }}
+                    {{ product_review_form | crispy }}
                     {% if user.is_authenticated %}
                         <button type="submit" class="btn btn-outline-black rounded-0 mt-5">
                             <span class="text-uppercase">Add review</span>
                         </button>
                     {% else %}
-                        <p>Only registered accounts are permitted to leave reviews<a href="{% url 'account_login' %}">Login</a>
+                        <p>Only registered accounts are permitted to leave reviews<a href="{% url 'account_login' %}"><br>Login</a>
                          or <a href="{% url 'account_signup' %}">Register</a></p>
                     {% endif %}
                 </form>
