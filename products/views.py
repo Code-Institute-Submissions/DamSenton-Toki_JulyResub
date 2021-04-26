@@ -150,7 +150,8 @@ def delete_product(request, product_id):
 
 def new_product_review(request, product_id):
     """
-    A view to allow customers to rate a product
+    A view to allow customers to rate 
+    a product if they are logged in
     """
     product = get_object_or_404(Product, pk=product_id)
 
