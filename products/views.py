@@ -3,8 +3,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category
-from .forms import ProductForm
+from .models import Product, Category, ProductReview
+from .forms import ProductForm, ProductReviewForm
 
 # Create your views here.
 
@@ -69,9 +69,14 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    product_review_form = ProductReviewForm()
+    reviews = ProductReview.objects.filter(
+        product_id=product_id).order_by('-date_created')
 
     context = {
         'product': product,
+        'produt_review_form': product_review_form,
+        'reviews': reviews,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -141,3 +146,23 @@ def delete_product(request, product_id):
     messages.success(
         request, f'Successfully deleted {product.name} from the store!')
     return redirect(reverse('products'))
+
+
+def new_product_review(request, product_id):
+    """
+    A view to allow customers to rate a product
+    """
+    product = get_object_or_404(Product, pk=product_id)
+
+    if request.method == 'POST':
+        product_review_form = ProductReviewForm(request.POST)
+        if product_review_form.is_valid():
+            review = product_review_form.save(commit=False)
+            review.product = product
+            review.user = request.user
+            review.save()
+            messages.info(
+                request, "f' Thank you for leaving a review for {product.name} ")
+            return redirect(reverse('product_detail', args=[product_id]))
+
+    return redirect(reverse('product_detail', args=[product_id]))

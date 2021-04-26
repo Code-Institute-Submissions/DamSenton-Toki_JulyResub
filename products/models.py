@@ -1,8 +1,9 @@
 from django.db import models
+from profiles.models import User
 
 
 class Category(models.Model):
-    
+
     class Meta:
         verbose_name_plural = 'Categories'
     name = models.CharField(max_length=254)
@@ -30,3 +31,23 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class ProductReview(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    review_subject = models.CharField(max_length=60, null=False, blank=False)
+    review = models.TextField(null=False, blank=False)
+    RATINGS = (
+        (0, 'No rating'),
+        (1, '1'),
+        (2, '2'),
+        (3, '3'),
+        (4, '4'),
+        (5, '5'),
+    )
+    rating = models.IntegerField(choices=RATINGS, default=0)
+    date_created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.review_subject

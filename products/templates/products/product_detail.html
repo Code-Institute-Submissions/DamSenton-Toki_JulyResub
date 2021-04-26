@@ -93,13 +93,6 @@
                                 </div>
                             </div>
 
-                            <a href="{% url 'new_review' %}" class="btn btn-outline-black rounded-0 mt-5">
-                                <span class="icon">
-                                    <i class="fas fa-chevron-left"></i>
-                                </span>
-                                <span class="text-uppercase">Leave a review?</span>
-                            </a>
-
                             <div class="col{% if s %}-12 mt-2{% endif %}">
                                 <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
                                     <span class="icon">
@@ -110,6 +103,7 @@
                                 <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5"
                                     value="Add to Bag">
                             </div>
+
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             {% endwith %}
                         </div>
@@ -118,6 +112,58 @@
             </div>
         </div>
     </div>
+     
+        <div class="row mt-5">
+            <div class="col col-lg-8 offset-lg-2">
+                <h4 class="text-uppercase">Product Reviews</h4>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 offset-lg-2 mb-4">
+                {% if reviews %}
+                    {% for review in reviews %}
+                        <div class="mb-3">
+                            <div class="logo-font">
+                                <span class="mr-3 text-muted"><i class="fas fa-user"></i> {{ review.user.username }}</span>
+                                <span class="text-muted"><i class="fas fa-clock"></i> {{ review.date_created }}</span>
+                                <div class="review-rating float-right">
+                                    <i class="fas fa-star{% if review.rate < 1 %}-o empty{% endif %}"></i>
+                                    <i class="fas fa-star{% if review.rate < 2 %}-o empty{% endif %}"></i>
+                                    <i class="fas fa-star{% if review.rate < 3 %}-o empty{% endif %}"></i>
+                                    <i class="fas fa-star{% if review.rate < 4 %}-o empty{% endif %}"></i>
+                                    <i class="fas fa-star{% if review.rate < 5 %}-o empty{% endif %}"></i>
+                                </div>
+                                <div class="mt-2"><p><strong>{{ review.subject }}</strong></p></div>
+                            </div>
+                            <div class="review-body">
+                                {{ review.review }}
+                            </div>
+                        </div>
+                        <hr>
+                    {% endfor %}
+                {% else %}
+                    <p>Be the first to review this product</p>
+                {% endif %}
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 form-bg p-3">
+                <h5 class="text-uppercase">Write a review</h5>
+                <form action="{% url 'new_product_review' product.id %}" method="POST" class="form-group review-form">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    {% if user.is_authenticated %}
+                        <button type="submit" class="btn btn-outline-black rounded-0 mt-5">
+                            <span class="text-uppercase">Add review</span>
+                        </button>
+                    {% else %}
+                        <p>Only registered accounts are permitted to leave reviews<a href="{% url 'account_login' %}">Login</a>
+                         or <a href="{% url 'account_signup' %}">Register</a></p>
+                    {% endif %}
+                </form>
+            </div>
+        </div>
+    
 </main>
 {% endblock %}
 
