@@ -163,7 +163,7 @@ def new_product_review(request, product_id):
             review.user = request.user
             review.save()
             messages.success(
-                request, "f' Thank you for leaving a review for {product.name} ")
+                request, f'Thank you for leaving a review for {product.name}')
             return redirect(reverse('product_detail', args=[product_id]))
     print(product_review_form)
     return redirect(reverse('product_detail', args=[product_id]))
