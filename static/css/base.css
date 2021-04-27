@@ -240,6 +240,12 @@ a.back-to-top {
     text-align: center;
 }
 
+.article-card-title .title-link{
+    color: black;
+    text-decoration: none;
+    
+}
+
 .article-header-image{
     height: 25rem;
     background: url("/media/articles-hero.jpg") no-repeat center;
@@ -481,7 +487,13 @@ footer p{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    
+    .carousel, .carousel-inner, .carousel-inner img{
+        height: 25rem;
+    }
+
+    main{
+    margin-top: 5rem;
+    }  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
