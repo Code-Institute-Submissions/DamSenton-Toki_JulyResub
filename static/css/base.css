@@ -172,8 +172,8 @@ a.back-to-top {
 }
 
 .home-image{
-    height: 20rem;
-    width: 30rem;
+    height: auto;
+    width: auto;
 }
 
 
