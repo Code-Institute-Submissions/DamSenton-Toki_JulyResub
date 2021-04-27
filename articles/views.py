@@ -45,7 +45,7 @@ def new_article(request):
         form = ArticleForm(request.POST, request.FILES)
         if form.is_valid():
             article = form.save()
-            messages.success(request, 'Successfully created a new article')
+            messages.success(request, f'Successfully created {article.title}')
             return redirect(reverse('individual_article', args=[article.slug]))
         else:
             messages.error(
@@ -78,7 +78,7 @@ def edit_article(request, slug):
             return redirect(reverse('individual_article', args=[article.slug]))
         else:
             messages.error(
-                request, 'Could not edit the article, please ensure the form is valid')
+                request, f'Could not edit {article.title}, please ensure the form is valid')
     else:
         form = ArticleForm(instance=article)
         messages.info(request, f'You are editing "{article.title}"')
@@ -102,5 +102,5 @@ def delete_article(request, slug):
 
     article = get_object_or_404(Articles, slug=slug)
     article.delete()
-    messages.success(request, 'Successfully deleted article')
+    messages.success(request, f'Successfully deleted {article.title}')
     return redirect(reverse('articles'))

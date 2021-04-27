@@ -1,7 +1,7 @@
 <div class="article-card">
     <div class="article-card-image">
         <a href="{% url 'individual_article' article.slug %}">
-            <img src="https://source.unsplash.com/random/100x100" class="e" alt="{{ article.title }}">
+            <img src="{{ MEDIA_URL }}{{ article.article_image }}" class="article-card-image" alt="article_image">
         </a>
     </div>
     <p class="mt-1">
@@ -10,5 +10,5 @@
     <h2 class="article-card-title">
         <a href="{% url 'individual_article' article.slug %}" class="title-link">{{ article.title }}</a>
     </h2>
-    <p>{{ article.intro|truncatechars:180 }}</p>
+    <p>{{ article.intro|truncatechars:100 }}</p>
 </div>

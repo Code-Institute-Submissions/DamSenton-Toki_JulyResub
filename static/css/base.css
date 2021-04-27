@@ -229,7 +229,11 @@ a.back-to-top {
     cursor: pointer;
 }
 
-/* Blog */
+/* Articles */
+
+.article-container{
+    text-align: center;
+}
 
 .articles{
     margin-top: 5rem;
@@ -237,11 +241,34 @@ a.back-to-top {
 }
 
 .article-header-image{
-    height: 20rem;
-    background: url("https://source.unsplash.com/random") no-repeat center;
+    height: 25rem;
+    background: url("/media/articles-hero.jpg") no-repeat center;
+    background-size: cover;
     margin-top: 11rem;
-    width: 100%;
-    
+    width: 80%;
+}
+
+.article-image{
+    align-items: center;
+    height: 20rem;
+    width: 80%;
+}
+
+.article-card-image{
+    height: 15rem;
+    width: auto;
+}
+
+.article-intro{
+    padding: 2rem;
+    justify-content: space-around;
+    word-wrap: break-word;
+}
+
+.article-content{
+    padding: 2rem;
+    justify-content: space-around;
+    word-wrap: break-word;
 }
 
 /*----------------------- Block Divider (courtesy of https://codepen.io/stg/pen/ZYYQMJ) ------------------------- */
