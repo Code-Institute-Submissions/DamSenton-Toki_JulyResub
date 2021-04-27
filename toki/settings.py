@@ -180,7 +180,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Amazon Web Services Bucket
 if 'USE_AWS' in os.environ:
-     # Cache control for AWS Bucket media files
+    # Cache control for AWS Bucket media files
     AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000'
@@ -203,6 +203,7 @@ if 'USE_AWS' in os.environ:
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
 # STRIPE
+
 FREE_DELIVERY_THRESHOLD = 100
 STANDARD_DELIVERY_PERCENTAGE = 10
 
