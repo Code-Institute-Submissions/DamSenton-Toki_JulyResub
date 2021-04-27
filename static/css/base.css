@@ -358,18 +358,6 @@ footer ul {
   bottom: 10px;
 }
 
-@media screen and (max-width: 800px) {
-  .social-media i {
-    position: relative;
-    font-size: 2vmax ;
-    letter-spacing: 0px;
-    padding: 20px;
-    margin: 1%;
-    text-decoration: none;
-    color: #272727;
-    bottom: 0px;
-  }
-}
 
 footer p{
    font-size: 1vmax !important;
@@ -490,23 +478,33 @@ footer p{
 
 /* Media Queries */
 
-/* Slightly larger container on XL screens */
 
-@media (min-width:1500px){
-    .carousel, .carousel-inner, .carousel-inner img{
-        height: 40rem;
-    }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
 }
 
-@media(min-width:1200px){
-    .container{
-        max-width: 80%;
-    }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .social-media i {
+    position: relative;
+    font-size: 2vmax ;
+    letter-spacing: 0px;
+    padding: 20px;
+    margin: 1%;
+    text-decoration: none;
+    color: #272727;
+    bottom: 0px;
+  }
+}
 
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -516,8 +514,14 @@ footer p{
     }
 }
 
-@media (min-width: 1500px){
-.carousel, .carousel-inner, .carousel-inner img {
-    height: 50rem;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .container{
+        max-width: 80%;
+    }
+
+    .carousel, .carousel-inner, .carousel-inner img{
+        height: 40rem;
     }
 }
