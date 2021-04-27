@@ -23,7 +23,7 @@
 
         <div class="carousel-item ">
             <img src="{{ MEDIA_URL }}carousel-image-2.jpg" class="d-block w-100 img-fluid" alt="carousel-image-2">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-md-block d-sm-block d-xs-block">
                 <h5>Discover the art of ceramics</h5>
                 <a href="{% url 'articles' %}" class="btn btn-lg carousel-button">Read our blog</a>
             </div>
@@ -31,7 +31,7 @@
 
         <div class="carousel-item">
             <img src="{{ MEDIA_URL }}carousel-image-3.jpg" class="d-block w-100 img-fluid" alt="carousel-image-3">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-md-block d-sm-block d-xs-block">
                 <h5>Toki Accounts</h5>
                 {% if not user.is_authenticated %}
                 <p>Create your account today!</p>
