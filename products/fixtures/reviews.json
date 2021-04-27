@@ -1,0 +1,50 @@
+[
+    {
+        "model": "products.productreview",
+        "pk": 1,
+        "fields": {
+            "product": 15,
+            "user": 1,
+            "review_subject": "",
+            "review": "",
+            "rating": 4,
+            "date_created": "2021-04-26T12:03:17.342Z"
+        }
+    },
+    {
+        "model": "products.productreview",
+        "pk": 2,
+        "fields": {
+            "product": 1,
+            "user": 1,
+            "review_subject": "Amazing quality",
+            "review": "I bought these for my kids and they love them!",
+            "rating": 4,
+            "date_created": "2021-04-26T15:23:53.466Z"
+        }
+    },
+    {
+        "model": "products.productreview",
+        "pk": 3,
+        "fields": {
+            "product": 2,
+            "user": 1,
+            "review_subject": "My wife loved them",
+            "review": "Bought these as an anniversary gift and they went down a treat.",
+            "rating": 4,
+            "date_created": "2021-04-26T16:13:03.198Z"
+        }
+    },
+    {
+        "model": "products.productreview",
+        "pk": 4,
+        "fields": {
+            "product": 6,
+            "user": 1,
+            "review_subject": "Great for kids",
+            "review": "Great quality, my kids love it!",
+            "rating": 5,
+            "date_created": "2021-04-26T16:14:55.348Z"
+        }
+    }
+]

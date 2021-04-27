@@ -33,8 +33,13 @@
             <img src="{{ MEDIA_URL }}carousel-image-3.jpg" class="d-block w-100 img-fluid" alt="carousel-image-3">
             <div class="carousel-caption d-none d-md-block">
                 <h5>Toki Accounts</h5>
+                {% if not user.is_authenticated %}
                 <p>Create your account today!</p>
                 <a href="{% url 'account_signup' %} " class="btn btn-lg carousel-button">Register Here</a>
+                {% else %}
+                <p>You are already registered</p>
+                <a href="{% url 'profile' %} " class="btn btn-lg carousel-button">My Profile</a>
+                {% endif %}
             </div>
         </div>
 
