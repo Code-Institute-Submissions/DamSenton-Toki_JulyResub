@@ -24,12 +24,12 @@ header{
     background-color: #fafafa !important;
 }
 
-/* .container, .container-fluid{
+/* .container, .container-fluid
     margin-top: 8rem;
 } */
 
 main{
-    margin-top: 11rem;
+    margin-top: 8rem;
 }   
 
 /* Navbar */
@@ -172,7 +172,7 @@ a.back-to-top {
 }
 
 .home-image{
-    height: 20rem;
+    height: 25rem;
     width: 30rem;
 }
 
@@ -227,6 +227,12 @@ a.back-to-top {
 
 .remove-item{
     cursor: pointer;
+}
+
+/* Checkout page */
+
+#loading-overlay{
+    background: grey !important;
 }
 
 /* Articles */
@@ -492,13 +498,15 @@ footer p{
     }
 
     main{
-    margin-top: 5rem;
+    margin-top: 3rem;
     }  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    
+    main{
+        margin-top: 3rem;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -524,6 +532,10 @@ footer p{
         left: 0;
         z-index: 1030;
     }
+
+    main{
+        margin-top: 7rem;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -535,5 +547,9 @@ footer p{
 
     .carousel, .carousel-inner, .carousel-inner img{
         height: 40rem;
+    }
+
+    main{
+        margin-top: 7rem;
     }
 }
