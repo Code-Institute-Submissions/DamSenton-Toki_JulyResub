@@ -38,6 +38,10 @@ main{
     text-align: center;
 }
 
+.navbar-nav li{
+    margin: 5px;
+}
+
 .main-logo{
     font-size: 3rem;
 }
