@@ -30,10 +30,12 @@
                                 {{ field }}
                             {% endif %}
                         {% endfor %}
-                        <div class="div-buttons mt-5">
-                            <button class="rounded-50" type="submit">Add new article</button>
-                            <a class="rounded-50" href="{% url 'articles' %}">Cancel</a>
+                        <div class="row center-align">
+                        <div class="mt-5">
+                            <button class="btn border-black btn-block rounded-50" type="submit">Add new article</button>
+                            <a class="btn btn-black btn-block rounded-50" href="{% url 'articles' %}">Cancel</a>
                         </div>
+                    </div>
                     </form>
                 </div>
             </div>

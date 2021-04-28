@@ -39,7 +39,8 @@ main{
 }
 
 .navbar-nav li{
-    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .main-logo{
@@ -259,8 +260,7 @@ a.back-to-top {
     height: 25rem;
     background: url("/media/articles-hero.jpg") no-repeat center;
     background-size: cover;
-    margin-top: 11rem;
-    width: 80%;
+    width: 1000%;
 }
 
 .article-image{
@@ -272,6 +272,11 @@ a.back-to-top {
 .article-card-image{
     height: 15rem;
     width: auto;
+}
+
+.article-card-image img{
+    height: 15rem;
+    width: 20.5rem;
 }
 
 .article-intro{

@@ -42,13 +42,15 @@ Talks
         <div class="row articles-row center-align">
             {% if articles %}
             {% for article in articles %}
-            <div class="col-12 mb-3">
+            <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                 {% include 'articles/includes/article_card.html' %}
             </div>
             {% endfor %}
             {% endif %}
             {% if request.user.is_superuser %}
+            <div class="col-12">
                 <a href="{% url 'new_article' %}" class="btn btn-outline-black rounded-50 mt-5">Add a new article</a>
+            </div>
             {% endif %}
         </div>
         
