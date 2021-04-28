@@ -24,9 +24,9 @@ header{
     background-color: #fafafa !important;
 }
 
-/* .container, .container-fluid
-    margin-top: 8rem;
-} */
+hr{
+    border: 1px solid rgb(231, 173, 107);
+}
 
 main{
     margin-top: 8rem;
@@ -45,6 +45,7 @@ main{
 
 .main-logo{
     font-size: 3rem;
+    color: rgb(231, 173, 107);
 }
 
 .icon {
@@ -61,8 +62,13 @@ main{
 
 .nav-item{
     text-align: center;
-    border: 1px solid rgb(71, 71, 71);
+    border: 2px solid rgb(231, 173, 107);
     border-radius: 10px;
+    list-style: none;
+}
+
+.nav-item:hover{
+    border: 1.4px solid rgb(231, 173, 107);
 }
 
 #deliver-banner{
@@ -73,26 +79,37 @@ main{
     font-size: 1rem;
 }
 
-.bg-black{
-    background: black !important;
-}
-
 /* Buttons */
+
+.button{
+    border-radius: 50px;
+}
 
 .main-logo-link {
     width: fit-content;
 }
 
 .carousel-button {
-    background: black;
-    color: white;
+    background: rgb(231, 173, 107);
+    color: #222;
     min-width: 160px;
     font-size: 1rem;
 }
 
-.btn-black {
-    background: #222;
-    color: white;
+.carousel-button:hover {
+    background: rgb(160, 118, 71);
+    color: #fafafa;
+}
+
+.btn-orange{
+    background: rgb(231, 173, 107);
+    color: #fafafa;
+    border: solid 1px rgb(231, 173, 107);
+}
+
+.btn-orange:hover{
+    background: rgb(204, 154, 97);
+    color: #fafafa;
 }
 
 .btn-outline-black {
@@ -101,27 +118,16 @@ main{
     border: 1px solid #222;
 }
 
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
-    background: #222;
-    color: white !important;
+.btn-outline-black:hover{
+    background: rgb(134, 134, 134);
+    color: #fafafa !important;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
-    color: white;
-}
 
 /*-------------- Back to top buttons (courtesy of https://heathertovey.com/blog/floating-back-to-top-button/) ------ */
 
 .back-to-top {
-    background-color: #000000;
+    background-color: rgb(231, 173, 107);
     color: #ffffff;
     opacity: 0;
     transition: opacity .6s ease-in-out;
@@ -147,7 +153,7 @@ a.back-to-top {
 }
 
 .back-to-top:hover {
-    background-color: #999999;
+    background-color: rgb(204, 154, 97);
     color: #000000;
 }
 
@@ -156,6 +162,18 @@ a.back-to-top {
 }
 
 /* Colours */
+
+.text-orange{
+    color: rgb(231, 173, 107);
+}
+
+.text-orange:hover{
+    color:rgb(231, 173, 107);
+}
+
+.bg-orange{
+    background: rgb(231, 173, 107);
+}
 
 .text-black {
     color: #000 !important;
@@ -555,6 +573,6 @@ footer p{
     }
 
     main{
-        margin-top: 7rem;
+        margin-top: 10rem;
     }
 }
