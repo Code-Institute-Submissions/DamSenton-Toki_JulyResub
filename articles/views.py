@@ -89,6 +89,8 @@ def edit_article(request, slug):
     context = {
         'form': form,
         'article': article,
+        # prevents the bag items showing up when editing a new article
+        'on_profile_page': True
     }
 
     return render(request, template, context)
