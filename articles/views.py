@@ -16,6 +16,8 @@ def articles(request):
 
     context = {
         "articles": articles,
+        # prevents the bag items showing up when adding a new article, i felt there was no point introducing a new vriable to kept it the same
+        'on_profile_page': True
     }
 
     return render(request, 'articles/articles.html', context)
