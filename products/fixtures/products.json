@@ -313,7 +313,7 @@
     "fields": {
       "category": 4,
       "sku": "Promise-Decorativ-Home",
-      "name": "ANdrew Petrov - Promise",
+      "name": "Andrew Petrov - Promise",
       "description": "A moderns sculpture depicting a promise.",
       "price": "114.99",
       "rating": "4.80",
@@ -684,5 +684,5 @@
       "image_url": null,
       "image": "split-vase.jpg"
     }
-  },
+  }
 ]
