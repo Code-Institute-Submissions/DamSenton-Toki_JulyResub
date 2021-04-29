@@ -89,6 +89,25 @@ Settling on the way I would present content was a big concern,
 
 <hr>
 
+
+## Database Schema
+
+For this project I had to use two different databses depending on which environment my website was in, development (SQLite) or deployed(Postgress).
+
+With this knowledge of multiple databses, I planned out in my head how i would want this data to work with each other.
+
+The products would need to be able to be grouped together with a common factor, so a foreign key or .category was used to tie these together, so that when filtered products with this specific category would be shown to the user.
+
+Products would also need to compiled in one file but with multiple varibales inside it's object, so JSON was a natuarl solution for this as it is object-oriented so gives a developer a lot more freedom and improves readbility of data.
+
+The site admin would also need to make use of both of the above databases for storing encrypted user info so that an admin can delete these should they see fit.
+
+With all of this data, making it work together on the backend would be key to a seamless user experience.
+
+App views and models would need to make use of the foreign keys by using Django's powerful import function which can bring in data from other apps as foreign keys to use in other views and models, this woudl help to ensure that all of this data can be used in conjunction with each other for a specific user.
+
+<hr>
+
 ## Wireframes
 
 - Desktop wireframe
@@ -222,11 +241,60 @@ Django comes with it's own debugger which when triggered, provides the developer
 
 All of the links for the website were manually tested by myself, these all work as intended. One problem I ran into was styling the allauth buttons, as they have set stylings, but using dev tools, I was able to figure out how to style these to fit my site.
 
+The search bar in the naviagtion bar has been tested by inputting multiple variations of queries to ensure that it returns relevant products.
+
+An issue for some stores is that files can be corrupted, so to ensure no broken images, a failsafe no_image.png is used in case of a broken image.
+
 The bag app is limited to 99 of each product, to preserve website integrity. Users are also unable to add 0 of a product to the bag as this would provide an unresponsive error from the bag app, this is also the same for the chekout app, users are unable to add excess or underflow items here.
 
+Multiple inputs have been performed to make sure that the toasts display as intended, these toasts came from the Boutique Ado mini project.
+- Inputs tested:
+- - Adding products to a bag - triggers a success message to let the user know what is in the bag, and gives them the option to view their bag, or head to the checkout page.
+- - Accessing a forbidden URL returns an error message to let the user know they are not permitted to do this.
+- - Editing a product or article will trigger a toast to let the admin know what it is they are editing.
+
+Protecting the website's products and content would be vital for a company, so using the Django view decorator @login_required ensured that regular users of the website cannot access business critical pages such as adding/editing/deleting products.
+
+Allauth features were tested by myself, by registering an account, logging in and logging out all successfully.
+
+Testing automatic emails was done through account registry, and successful purchases.
+
+## App testing
+
+### Home
+The home app was tested by myself using Chrome Dev tools to ensure the content loaded as intended, clicking on the links in the navbar worked as intended and the other apps were connected to this.
+
+### Products
+The products app was tested by navigating through the products page, cross-referencing with my .json file to ensure information was correct.<br>
+Clicking on the product would bring up the product's details, using Chrome Dev tools would prove that this page is responsive on all screen sizes.<br>
+Using the quantity selector showed that it is impossible to add less than 1 or more than 99 of each product, typing in the box is also prohibited past these numbers.<br>
+I tested the creation and editing of products myself, when logged in as an admin, I could successfuly add new products, edit them, and delete them as needed.
+
+### Bag 
+The bag app was tested by adding multiple different products from multiple categories to ensure that all information is shown as intended.<br>
+As with the products testing, the quantity selector works the same way.<br>
+Adding in products that do not total £100 will show the user the grand total of the bag with how much more they need to spend in order to recieve free delivery, adding in items to push users over this threshold removes this alert.
+
+### Checkout
+When a user presses secure checkout, with items in their bag, they are shown to the checkout form, from here entering their details works, and using the afformentioned Stripe test details, users can complete a purchase.<br>
+Clicking on 'save information to my profile' works as intended, and when users visit their profile, their details are pre-populated.<br>
+Successful purchses direct users to the checkout-success page, which gives the user a breakdown of their order and their delivery details.
+
+### Profiles
+Upon registering an account, users are met with a toast to let them know they are logged in with their username.<br>
+When accessing their account, users can view and edit their details using the form provided.<br>
+If the user had made purchases, their order history is diaplyed on their profile.
+
+### Articles
+The articles app was tested mainlyusing Chrome Dev tools to test for responsiveness, as the functionality was mostly there from the products app, tetsing the edit/add/delete fucntinality was carried out in the same way.<br>
 
 
 
+This website was tested on:<br>
+- Chrome (Desktop)
+- Opera (Desktop)
+- Safari (iPhone, multiple versions)
+- Chrome (Samsung Galaxy s21)
 
 
 <hr>
@@ -235,12 +303,16 @@ The bag app is limited to 99 of each product, to preserve website integrity. Use
 
 ### HTML Validator (W3C):
 
+### HTML Code Validation
+
+#### Landing Page
+- https://toki-damsenton.herokuapp.com showed a few errors in my HTML code, such as an unpaired head tag, 'Element li not allowed as child of element nav in this context.' and a stray script tag. When searching through my code using the built in GitPod search feature, I was unable to find any of these actual errors in my code, there was no unpaired head tag, no list item a child of a nav element, and no stray script tag.
+- Other erros included img tags with no alt attributes and a h4 element being a child of a span element, these were fixed quickly and easily.
+   
 
 
- [HTML Code Validation](static/code-validation/html).
 
 ### CSS Validator (W3C):
-
 
  [CSS Code Validation](static/code-validation/css).
 
@@ -251,29 +323,7 @@ The bag app is limited to 99 of each product, to preserve website integrity. Use
 ### Python Validator (Extendsclass.com)
 
 
-<hr>
 
-## Responsiveness
-
-
-
-### Chrome Developer Tools
-
-
-<hr>
-
-## Testing Links
-
-<hr>
-
-## Database Schema
-
-<hr>
-
-## Database Entries / Data Retrieval
-
-
-<hr>
 
 ## Project Deployment
 

@@ -2,9 +2,7 @@
 
 <!doctype html>
 <html lang="en">
-<link rel="icon" 
-      type="image/png" 
-      href="{{ MEDIA_URL }}toki-favicon.ico">
+
 <head>
 
     {% block meta %}
@@ -23,6 +21,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Radley&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="icon" 
+      type="image/png" 
+      href="{{ MEDIA_URL }}toki-favicon.ico">
     {% endblock %}
 
     {% block extra_css %}
@@ -51,7 +52,7 @@
 </head>
 
 <body>
-<!-- main heade with navigation bar -->
+<!-- main header with navigation bar -->
     <header class="header-container fixed-top bg-white">
         <a href="#" id="back-to-top" class="back-to-top" style="display: inline;"><i class="fas fa-angle-up"></i></a>
         <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
