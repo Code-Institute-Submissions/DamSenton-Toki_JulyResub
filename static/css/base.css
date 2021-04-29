@@ -524,6 +524,20 @@ footer p{
     width: 70%;
 }
 
+
+/* Footer */
+
+.social-media i {
+    position: relative;
+    font-size: 1rerem;
+    letter-spacing: 0px;
+    padding: 0.5rem;
+    margin: 1rem;
+    text-decoration: none;
+    color: #272727;
+    bottom: 0px;
+  }
+
 /* Media Queries */
 
 
@@ -540,8 +554,14 @@ footer p{
     }
 
     main{
-    margin-top: 6.5rem;
+        margin-top: 6.5rem;
     }  
+
+    .home-image{
+        height: 15rem;
+        width: 30rem;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -553,16 +573,6 @@ footer p{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .social-media i {
-    position: relative;
-    font-size: 2vmax ;
-    letter-spacing: 0px;
-    padding: 20px;
-    margin: 1%;
-    text-decoration: none;
-    color: #272727;
-    bottom: 0px;
-  }
 
    .increment-qty, .decrement-qty{
         padding: .25rem .5rem !important;
