@@ -1,6 +1,6 @@
-# Walkies!
+# Tōki
 
-## Milestone Project 3
+## Milestone Project 4
 
 ![ Responive Design](media/responsive.JPG)
 
@@ -306,24 +306,65 @@ This website was tested on:<br>
 ### HTML Code Validation
 
 #### Landing Page
-- https://toki-damsenton.herokuapp.com showed a few errors in my HTML code, such as an unpaired head tag, 'Element li not allowed as child of element nav in this context.' and a stray script tag. When searching through my code using the built in GitPod search feature, I was unable to find any of these actual errors in my code, there was no unpaired head tag, no list item a child of a nav element, and no stray script tag.
-- Other erros included img tags with no alt attributes and a h4 element being a child of a span element, these were fixed quickly and easily.
-   
+- The landing page showed a few errors in my HTML code, such as an unpaired head tag, 'Element li not allowed as child of element nav in this context.' and a stray script tag. When searching through my code using the built in GitPod search feature, I was unable to find any of these actual errors in my code, there was no unpaired head tag, no list item a child of a nav element, and no stray script tag.
+- Other erros included img tags with no alt attributes and a h4 being the child of a span element this was easily fixed.
+- Another error was to do with duplicate element ID's but as this is due to the template including the mobile-nav.html and main-nav.html, this error occcurs.
+
+#### All Products Page
+- The all products page produced the same errors as above, but upon searching my code, these errors could not be found.
+
+#### Product Detail Page
+- The product-detail page produced the same errors as above, but upon searching my code, these errors could not be found.
+
+#### Bag Page
+- The product-detail page produced the same errors as above, but upon searching my code, these errors could not be found.
+- Another error was due to multiple uses of the main tag, the duplicate tag has now been removed.
+
+#### Checkout Page
+- The checkout page produced the same errors as above, but upon searching my code, these errors could not be found.
+
+#### Checkout Success Page
+- The checkout success page produced the same errors as above, but upon searching my code, these errors could not be found.
+
+#### Login Page
+- The login page produced the same errors as above, but upon searching my code, these errors could not be found.
+- Another error was due to multiple uses of the main tag, the duplicate tag has now been removed.
+
+#### Log Out Page
+- The logout page produced the same errors as above, but upon searching my code, these errors could not be found.
+
+#### Profile Page
+- The online validator was unalbe to complete this check as it does not have the permission as it is not logged in.
+
+#### Product Management Page
+- The product management page produced the same errors as above, but upon searching my code, these errors could not be found.
+- Another error was due to multiple uses of the main tag, the duplicate tag has now been removed.
+
+#### Articles Page
+- The articles page produced the same errors as above, but upon searching my code, these errors could not be found.
+- Another error was due to multiple uses of the main tag, the duplicate tag has now been removed.
+
+#### Individual Article Page
+- The individual article page produced the same errors as above, but upon searching my code, these errors could not be found.
+- Another error was due to multiple uses of the main tag, the duplicate tag has now been removed.
+
+## CSS Validator (W3C):
+
+### CSS Code Validation
+- Using direct input into the validator showed one error which was 'Value Error : font-size Unknown dimension 1rerem' this was a very quick fixed, and has been rectified.
+
+### CSS URI Validation
+- Validating through W3C's URI validator showed 'Property text-decoration-skip-ink doesn't exist &	.accordion	Property overflow-anchor doesn't exist' across all pages. As these are built-in Bootstrap classes, I will not be editing these.
 
 
+## JavaScript Validator (JSHint)
 
-### CSS Validator (W3C):
-
- [CSS Code Validation](static/code-validation/css).
-
-### JavaScript Validator (JSHint)
-
-[JavaScript Errors](static/code-validation/javascript).
+### JavaScript Errors
+- Using JSHint, there were no erros in my JavaScript, only warnings based on ES6 not being recognised by the validator.
 
 ### Python Validator (Extendsclass.com)
-
-
-
+- This validator only returned errors on my f' strings as this is not recognised by this validator.
+- All python code meets PEP8 compliance.
 
 ## Project Deployment
 
@@ -341,7 +382,7 @@ This project is also hosted on Heroku, and using automatic deployments from GitH
 
 - With these settings confirmed, the page is now live on GitHub Pages, and free to view by all in a web browser.
 
-- In the CLI(Command Line Interface) i Installed Django, and all of my subsequent requirements using pip3 install Django.
+- In the CLI(Command Line Interface) I Installed Django, and all of my subsequent requirements using pip3 install Django.
 
 - From here I used 'python3 manage.py startapp toki' to create my first app, which installed all of the relevant python files ready for use. This method was also used to install of the apps in the workspace. 
 
@@ -349,9 +390,15 @@ This project is also hosted on Heroku, and using automatic deployments from GitH
 
 - I created a Heroku account by first navigating to [Heroku](https://dashboard.heroku.com/apps), and creating an account. From here, I selected create a new app, and this brought me to create an app name and select the region for it's hosting.
 From here, I entered in my GitHub details and linked the account.
-In the app settings, perhaps ne of the most important parts of this project, I entered in multiple variables into the section labelled 'config vars'. These config vars are hidden from any code pushed to GitHub and Heroku unless you are the owner of the repository. These config vars are essential to the connection between my app and MongoDB, utilizing my 'SECRET_KEY', 'MONGO_URI', 'MONGO_DBNAME', 'PORT' and 'IP' variables set up in my env.py file on GitPod.
+In the app settings, perhaps one of the most important parts of this project, I entered in multiple variables into the section labelled 'config vars'. These config vars are hidden from any code pushed to GitHub and Heroku unless you are the owner of the repository. These config vars are essential to the connection between my app and Amazon AWS, utilizing my website secret keys, stripe secret keys, AWS secret keys and 
 
 - Once my repository was created on GitHub, I was able to link this to my Heroku profile.
+
+- Once connected to Heroku, I created an Amazon AWS account in order to create an S3 bucket.
+
+- To do this, I created my account, navigated to S3, created a bucket, then I had to create a policy for this bucket, create a group for this bucket then add users into this.
+
+- Once set up, I downloaded the .csv file which contained the secret keys needed to link this bucket to my project, the added these into my Heroku config vars.
 
 - Any users wishing to view this code, or if they would like to use it for inspiration, they can do so on [My GitHub Page](https://github.com/DamSenton/Toki)
 
@@ -373,10 +420,20 @@ Most of the rest of the code for this project was written by myself, however, as
 
 For extra style accross the page, I opted to use a new block divider, this was free to use from [Codepen.Io](https://codepen.io/stg/pen/ZYYQMJ)
 
-I took inspiration from previous projects and used old code such as my nav-bar-hide.js code and my back to top buttons.
+I took inspiration from previous projects and used old code such as card elements and footer icons.
+
+I gained a lot of inspiration from the Slack community and seeing all of their projects inspired my use of a review function.
 
 <hr>
 
 ## Special Thanks
 
+A huge thankyou to Code Institute for giving me this opportunity to learn this craft over the last year, while it hasn't always been easy or even enjoyable at points, it has always been worth it.
 
+A thankyou to my mentor Seun Owonikoko for her undivided support and inspiration, her suggestion for an article app really helped to tie this project together.
+
+A big thank you to my wife for her unlimited support through the late nights of me coding, and the subsequent stress of project deadlines.
+
+And congratulations to my past self for taking on this huge challenge and actually sticking to it.
+
+Sam.
