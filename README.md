@@ -85,7 +85,7 @@ Subtle hints from the carousel images and also the icon in the navbar encourage 
 Toasts would also prove very useful as they give instant feedback to a customer with certain inputs such as adding a product to the bag, or trying to access a page they aren't permitted to.
 
 - Surface Plane: With all of the above mapped out, I set to work on creating the surface of the webpage. Starting with [Figma](https://www.figma.com/file/F24anz4HjMIsBDzgAt1gcy/Tōki)<br>
-Settling on the way I would present content was a big concern, 
+Settling on the way I would present content was a big concern, so I created my layout page by page to see how a user would like to navigate my website.
 
 <hr>
 
