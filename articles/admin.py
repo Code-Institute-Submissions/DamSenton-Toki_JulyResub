@@ -7,9 +7,10 @@ from .models import Articles
 class ArticlesAdmin(admin.ModelAdmin):
     list_display = (
         'title',
+        'slug',
         'pk',
-        'date',
-        'slug'
+        'date'
+        
     )
 
 

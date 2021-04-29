@@ -34,8 +34,8 @@ class Product(models.Model):
 
 
 class ProductReview(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
     review_subject = models.CharField(max_length=60, null=False, blank=False)
     review = models.TextField(null=False, blank=False)
     RATINGS = (

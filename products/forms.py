@@ -28,10 +28,10 @@ class ProductReviewForm(forms.ModelForm):
 
     class Meta:
         model = ProductReview
+        fields = ['review_subject', 'review', 'rating']
         widgets = {
             'review': Textarea(attrs={'cols': 6, 'rows': 6}),
         }
-        fields = ['review_subject', 'review', 'rating']
         labels = {
             'rating': 'Please select a rating'
         }
