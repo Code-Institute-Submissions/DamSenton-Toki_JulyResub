@@ -583,6 +583,11 @@ footer p{
     main{
         margin-top: 8rem;
     }
+
+    .article-image{
+        height: 30rem;
+        width: 100%;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
