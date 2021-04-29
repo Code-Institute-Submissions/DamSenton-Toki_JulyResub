@@ -130,6 +130,7 @@
             <div class="mb-3">
                 <div class="logo-font">
                     <span class="mr-3 text-muted"><i class="fas fa-user"></i> {{ review.user.username }}</span>
+                    <span class="mr-3 text-muted"><i class="fas fa-user"></i> {{ review.review_subject }}</span>
                     <span class="text-muted"><i class="fas fa-clock"></i> {{ review.date_created }}</span>
                     <div class="review-rating float-right">
                         <i class="fas fa-star{% if review.rate < 1 %}-o empty{% endif %}"></i>
