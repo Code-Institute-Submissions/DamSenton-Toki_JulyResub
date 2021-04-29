@@ -291,17 +291,17 @@ a.back-to-top {
     height: 25rem;
     background: url("/media/articles-hero.jpg") no-repeat center;
     background-size: cover;
-    width: 1000%;
+    width: 100%;
 }
 
 .article-image{
     align-items: center;
-    height: 20rem;
-    width: 80%;
+    height: 30rem;
+    width: 100%;
 }
 
 .article-card-image{
-    height: 15rem;
+    height: 20rem;
     width: auto;
 }
 
