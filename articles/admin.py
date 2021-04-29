@@ -10,7 +10,6 @@ class ArticlesAdmin(admin.ModelAdmin):
         'slug',
         'pk',
         'date'
-        
     )
 
 
