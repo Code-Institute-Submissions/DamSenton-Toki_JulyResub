@@ -1,6 +1,8 @@
 from django import forms
 from .models import Order
 
+# a form to take in the fields from the model and set the values using crispy
+
 
 class OrderForm(forms.ModelForm):
     class Meta:

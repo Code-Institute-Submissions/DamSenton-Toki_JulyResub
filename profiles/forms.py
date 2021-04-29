@@ -1,6 +1,8 @@
 from django import forms
 from .models import UserProfile
 
+# a user profile form takes the userprofile model to aloow a user account to be reated and then the details to be edited later
+
 
 class UserProfileForm(forms.ModelForm):
     class Meta:
@@ -32,4 +34,3 @@ class UserProfileForm(forms.ModelForm):
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'border-black rounded-50 profile-form-input'
             self.fields[field].label = False
-            

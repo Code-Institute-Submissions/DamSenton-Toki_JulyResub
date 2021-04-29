@@ -3,6 +3,8 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
 
+# context logic to display the contents of the bag and the total cost of the bag items with the FREE_DELIVERY_DELTA included
+
 
 def bag_contents(request):
 

@@ -2,6 +2,8 @@ from django import forms
 
 from .models import Articles
 
+# A form for creating/editing articles
+
 
 class ArticleForm(forms.ModelForm):
 

@@ -106,6 +106,7 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
+
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
@@ -122,6 +123,7 @@ WSGI_APPLICATION = 'toki.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# an if statement makes the site use SQLite if it is in development, and Postgress if the site is deployed
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
@@ -180,7 +182,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
-# Amazon Web Services Bucket
+# an if statement to use Amazon Web Services Bucket if the app is deployed
 if 'USE_AWS' in os.environ:
     # Cache control for AWS Bucket media files
     AWS_S3_OBJECT_PARAMETERS = {

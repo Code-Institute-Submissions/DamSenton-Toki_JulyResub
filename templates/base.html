@@ -16,6 +16,7 @@
     {% block extra_meta %}
     {% endblock %}
 
+    <!-- load in core css -->
     {% block corecss %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -26,7 +27,7 @@
 
     {% block extra_css %}
     {% endblock %}
-
+<!-- load in core JS -->
     {% block corejs %}
     <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -50,7 +51,7 @@
 </head>
 
 <body>
-
+<!-- main heade with navigation bar -->
     <header class="header-container fixed-top bg-white">
         <a href="#" id="back-to-top" class="back-to-top" style="display: inline;"><i class="fas fa-angle-up"></i></a>
         <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
@@ -59,7 +60,7 @@
                     <h2 class="logo-font main-logo my-0"><strong>Tōki</strong></h2>
                 </a>
             </div>
-            
+            <!-- search bar so that customers can enter a query and have a related product returned -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
@@ -75,6 +76,7 @@
                     </div>
                 </form>
             </div>
+            <!-- my aacount button -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
@@ -98,6 +100,7 @@
                             {% endif %}
                         </div>
                     </li>
+                    <!-- shopping bag - shows bag total - clicking on takes you to your bag -->
                     <li class="list-inline-item">
                          <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                             <div class="text-center">
@@ -115,7 +118,7 @@
                 </ul>
             </div>
         </div>
-
+<!-- navigation bars for dekstop and mobile screens -->
         <div class="row bg-white">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
@@ -132,6 +135,8 @@
             </div>            
         </div>
     </header>
+
+    <!--  toast messages -->
     {% if messages %}
         <div class="message-container">
             {% for message in messages %}
@@ -158,7 +163,7 @@
 
     {% endblock %} 
 
-
+<!-- JS code to trigger the toasta upon various user inputs -->
     {% block postloadjs %}
         <script type="text/javascript">
         $('.toast').toast('show');
@@ -167,7 +172,7 @@
 
 
 </body>
-
+<!-- back to top button -->
 <script>
     var link = document.getElementById("back-to-top");
     var amountScrolled = 250;

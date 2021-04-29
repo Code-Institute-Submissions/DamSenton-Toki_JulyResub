@@ -5,6 +5,8 @@ from django.dispatch import receiver
 
 from django_countries.fields import CountryField
 
+# userprofile model outlines the fields to be used in the userprofile form
+
 
 class UserProfile(models.Model):
     """

@@ -35,7 +35,7 @@ def individual_article(request, slug):
 
 @login_required
 def new_article(request):
-    """ Gives a superuser the abilit to create new articles """
+    """ Gives a superuser the ability to create new articles """
 
     if not request.user.is_superuser:
         messages.error(request, 'You do not have permission to do that')

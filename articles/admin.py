@@ -3,6 +3,8 @@ from .models import Articles
 
 # Register your models here.
 
+# provides the list in the site admin
+
 
 class ArticlesAdmin(admin.ModelAdmin):
     list_display = (

@@ -4,6 +4,8 @@ from .models import Product, Category
 from django.forms import Textarea
 from .models import ProductReview
 
+# a product form using the product model to allow for creating/editing a product
+
 
 class ProductForm(forms.ModelForm):
 
@@ -22,6 +24,8 @@ class ProductForm(forms.ModelForm):
         self.fields['category'].choices = friendly_names
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-black rounded-50'
+
+# a product review form using the productreview model in order for products to be reviewed
 
 
 class ProductReviewForm(forms.ModelForm):

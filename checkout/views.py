@@ -17,6 +17,9 @@ import json
 
 @require_POST
 def cache_checkout_data(request):
+    """caches the checkout data in case of an error 
+    that prevents payment success, 
+    so the user isn't charged"""
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -33,6 +36,7 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
+    """a view to take the use to the checkout page"""
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 

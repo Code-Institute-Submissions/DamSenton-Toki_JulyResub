@@ -2,6 +2,8 @@ from django.db import models
 
 from django.core.validators import MinLengthValidator
 
+# An articles model, outlining the possible fields for the article form
+
 
 class Articles(models.Model):
 
