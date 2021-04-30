@@ -288,7 +288,10 @@ If the user had made purchases, their order history is diaplyed on their profile
 ### Articles
 The articles app was tested mainlyusing Chrome Dev tools to test for responsiveness, as the functionality was mostly there from the products app, tetsing the edit/add/delete fucntinality was carried out in the same way.<br>
 
-
+### Flake8
+Using the console command python3 manage.py flake8 brings up errors in the code.<br>
+Upon running this command, there were no critical errors, the only two errors of note were to do with lines being too long, and unused imports, but as the iports came as standard when starting an app, I did not corrct these.<br>
+Another small error was 'avoid using null=true on charField' but I chose to keep this in as it is important for my models and views.
 
 This website was tested on:<br>
 - Chrome (Desktop)
@@ -422,7 +425,9 @@ For extra style accross the page, I opted to use a new block divider, this was f
 
 I took inspiration from previous projects and used old code such as card elements and footer icons.
 
-I gained a lot of inspiration from the Slack community and seeing all of their projects inspired my use of a review function.
+My Articles app was inspired by [Valentina-B](https://github.com/valentina-b/ecosio-eco-friendly-cosmetics) and customised by myself to change stylings, variable names, and object data.
+
+The ProductReview code was inspired by [Vlaodprea](https://github.com/vladoprea/dream-woollies) and edited by myself to better fit my website's style.
 
 <hr>
 
