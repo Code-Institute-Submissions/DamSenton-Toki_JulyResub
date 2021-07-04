@@ -71,6 +71,11 @@ main{
     border: 1.4px solid rgb(231, 173, 107);
 }
 
+.nav-link{
+    display: block;
+    padding: 0.5rem 0.5rem;
+}
+
 #deliver-banner{
     bottom: 0;
 }
