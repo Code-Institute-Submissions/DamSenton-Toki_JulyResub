@@ -36,6 +36,11 @@ main{
 
 .navbar{
     text-align: center;
+    justify-content: space-evenly;
+}
+
+.misc-nav{
+    justify-content: space-evenly;
 }
 
 .navbar-nav li{
