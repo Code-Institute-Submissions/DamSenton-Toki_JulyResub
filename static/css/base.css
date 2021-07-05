@@ -38,9 +38,6 @@ main{
     text-align: center;
 }
 
-.misc-nav{
-    justify-content: space-evenly;
-}
 
 .navbar-nav li{
     margin-left: 5px;
@@ -606,6 +603,11 @@ footer p{
     .article-image{
         height: 30rem;
         width: 100%;
+    }
+
+    .navbar{
+        text-align: center;
+        justify-content: space-evenly;
     }
 }
 
