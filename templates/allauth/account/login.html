@@ -6,11 +6,11 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block inner_content %}
-<main>
+<div class="main">
 <hr>
 <h2 class="logo-font mb-4">{% trans "Sign In" %}</h2>
 <hr>
-</main>
+</div>
 {% get_providers as socialaccount_providers %}
 
 {% if socialaccount_providers %}

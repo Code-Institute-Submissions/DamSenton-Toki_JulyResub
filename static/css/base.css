@@ -28,7 +28,7 @@ hr{
     border: 1px solid rgb(231, 173, 107);
 }
 
-main{
+.main{
     margin-top: 8rem;
 }   
 
@@ -37,7 +37,6 @@ main{
 .navbar{
     text-align: center;
 }
-
 
 .navbar-nav li{
     margin-left: 5px;
@@ -74,7 +73,7 @@ main{
 
 .nav-link{
     display: block;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 0.4rem;
 }
 
 #deliver-banner{
@@ -559,7 +558,7 @@ footer p{
         height: 25rem;
     }
 
-    main{
+    .main{
         margin-top: 6.5rem;
     }  
 
@@ -572,8 +571,8 @@ footer p{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    main{
-        margin-top: 6rem;
+    .main{
+        margin-top: 6.5rem;
     }
 }
 
@@ -596,7 +595,7 @@ footer p{
         z-index: 1030;
     }
 
-    main{
+    .main{
         margin-top: 10rem;
     }
 
@@ -622,7 +621,7 @@ footer p{
         height: 40rem;
     }
 
-    main{
+    .main{
         margin-top: 10rem;
     }
 }

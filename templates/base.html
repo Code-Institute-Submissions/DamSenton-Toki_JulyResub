@@ -83,7 +83,7 @@
                             aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
-                                <p class="my-0">{% if user.is_authenticated %}My Account {% else %} Log in/Register 
+                                <p class="my-0">{% if user.is_authenticated %}My Account {% else %} Log in/Register
                                     {% endif %}</p>
                             </div>
                         </a>
@@ -121,17 +121,13 @@
         </div>
         <!-- navigation bars for dekstop and mobile screens -->
         <div class="row bg-white">
-            <nav class="navbar  navbar-expand-lg navbar-light w-100">
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
                     aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <nav class="misc-nav">
-                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                    {% include 'includes/mobile-nav.html' %}
-                    {% include 'includes/main-nav.html' %}
-                </ul>
-            </nav>
+                {% include 'includes/mobile-nav.html' %}
+                {% include 'includes/main-nav.html' %}
             </nav>
         </div>
         <div id="delivery-banner" class="row text-center">
@@ -170,13 +166,11 @@
 
     <!-- JS code to trigger the toasta upon various user inputs -->
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         $('.toast').toast('show');
     </script>
     {% endblock %}
 
-
-</body>
 <!-- back to top button -->
 <script>
     var link = document.getElementById("back-to-top");
@@ -207,6 +201,9 @@
         var runAnimation = setInterval(animateScroll, 16);
     });
 </script>
+
+</body>
+
 
 
 </html>
