@@ -622,6 +622,10 @@ footer p{
     }
 
     .main{
+        margin-top: 10rem;
+    }
+
+    .allauth-main{
         margin-top: 8rem;
     }
 }
