@@ -562,6 +562,10 @@ footer p{
         margin-top: 7rem;
     }  
 
+    .allauth-main{
+        margin-top: 5.5rem;
+    }
+
     .home-image{
         height: 15rem;
         width: 30rem;
@@ -573,6 +577,10 @@ footer p{
 @media only screen and (min-width: 600px) {
     .main{
         margin-top: 6.5rem;
+    }
+
+    .allauth-main{
+        margin-top: 5rem;
     }
 }
 
@@ -597,6 +605,10 @@ footer p{
 
     .main{
         margin-top: 10rem;
+    }
+
+    .allauth-main{
+        margin-top: 8rem;
     }
 
     .article-image{
