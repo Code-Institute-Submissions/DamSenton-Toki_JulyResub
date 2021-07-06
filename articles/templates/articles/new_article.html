@@ -11,6 +11,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
+                <hr>
                 <h1 class="text-center logo-font">Create a new article</h1>
                 <hr>
             </div>
@@ -21,25 +22,27 @@
         <div class="row">
             <div class="col-12">
                 <div class="new-article-div">
-                    <form class="mt-3" action="{% url 'new_article' %}" method="POST" enctype="multipart/form-data" id="new-article-form">
+                    <form class="mt-3" action="{% url 'new_article' %}" method="POST" enctype="multipart/form-data"
+                        id="new-article-form">
                         {% csrf_token %}
                         {% for field in form %}
-                            {% if field.name != 'image' %}
-                                {{ field | as_crispy_field }}
-                            {% else %}
-                                {{ field }}
-                            {% endif %}
+                        {% if field.name != 'image' %}
+                        {{ field | as_crispy_field }}
+                        {% else %}
+                        {{ field }}
+                        {% endif %}
                         {% endfor %}
                         <div class="row center-align">
-                        <div class="mt-5">
-                            <button class="btn border-black btn-block rounded-50" type="submit">Add new article</button>
-                            <a class="btn btn-orange btn-block rounded-50" href="{% url 'articles' %}">Cancel</a>
+                            <div class="mt-5">
+                                <button class="btn border-black btn-block rounded-50" type="submit">Add new
+                                    article</button>
+                                <a class="btn btn-orange btn-block rounded-50" href="{% url 'articles' %}">Cancel</a>
+                            </div>
                         </div>
-                    </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+</div>
 {% endblock %}
