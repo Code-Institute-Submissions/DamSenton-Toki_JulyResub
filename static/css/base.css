@@ -584,6 +584,15 @@ footer p{
     }
 }
 
+@media only screen and (min-device-width : 560px) and (max-device-width : 900px) and (orientation : landscape) { 
+    .navbar-nav li {
+        margin-left: 5px;
+        margin-right: 5px;
+        height: auto;
+        font-size: 0.5rem;
+    }
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 

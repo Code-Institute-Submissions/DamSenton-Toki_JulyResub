@@ -50,22 +50,24 @@ With the above in mind, I wanted to make the e-commerce website, but also make i
 
 
 ### New users
-- New users would like to find an easily navigatable webage with a consistent colour scheme and intuitive design.
+- As a new user, I would like to find an easily navigatable webpage with a consistent colour scheme and intuitive design.
 
-- A new user would also liek the optin to make an account if they like the website enough.
+- As a new user, I would also like the option to make an account if they like the website enough.
 
- - Another key feature for a new user, who may not want to be signed up, woudl be the ability to buy products without having an account.
+- As a new user, I would like the ability to purchase products without being tied into making an account.
 
 ### Returning users
-- Returning users would want a way to see their information in their account, and edit this according to their own preferences, and possible changes of name/address etc.
+- As a returning user, I would want a way to see my information in my account if I make one, and edit this according to my preferences, and possible changes of name/address etc.
 
-- Returning users usually means repat customers, so a way to see their order history would be very beneficial.
+- As a returning user, I would liek to be able to see my order history.
 
-- These users would also benefit from regular updates to the articles section so they can keep up to date with the company and the products.
+- As a returning user, I would like a way to stay up to date with the company and any new stories from within the pottery world.
+
+- As a returning customer, I would like to read or create reviews to possibly influence my purchases.
 
 ### Mobile and tablet users
 
-- Mobile users would need a responsive website that works well on smaller screens without word-wrapping, quality loss or image distortion.
+- As a mobile user, I would like a responsive website that doesn't lack any features that the main desktop site has.
 
 
 <hr>
@@ -299,6 +301,48 @@ This website was tested on:<br>
 - Safari (iPhone, multiple versions)
 - Chrome (Samsung Galaxy s21)
 
+<hr>
+
+## Testing User Stories:
+
+- ### New User
+
+     i.  As a new user, I would like to find an easily navigatable webpage with a consistent colour scheme and intuitive design.
+        
+    * New users are met with a consistent style and an industry standard navigation bar with clear and concise wording.
+
+
+    ii.  As a new user, I would also like the option to make an account if they like the website enough.
+    
+    * All users are able to create an account by entering their email, a preferred username, and a password that meets the webpage's passord requirements (these are clearly shown when a user enters a password with the wrong format)
+
+    iii.  As a new user, I would like the ability to purchase products without being tied into making an account.
+
+    * New users can browse all products, add them to a bag and purchase these in checkout without having to create an account.
+
+- ### Returning/Frequent Users
+    i. As a returning user, I would want a way to see my information in my account if I make one, and edit this according to my preferences, and possible changes of name/address etc.
+
+    * When a user has created an account, they can go into their profile and add in their information. This information can also be saved directly to their profile when completing a purchase by checking the button at the bottom of the checkout form.
+
+    ii. As a returning user, I would like to be able to see my order history.
+
+    * Any user who has completed a purchase will have their order history presented to them in their profile. Clicking on the order number will take the user to a page which shows the original order confirmation screen.
+
+    iii. As a returning user, I would like a way to stay up to date with the company and any new stories from within the pottery world.
+
+    * All users are presented with a button in the nav bar labelled 'Blog', this takes users to a page which currently has four articles from 'industry professionals' which outline various techniques or news from the pottery world. 
+    *The articles page can also be accessed from the carousel image on the home page with a button labelled 'Read Our Blog'.
+
+    iiii. As a returning customer, I would like to read or create reviews to possibly influence my purchases.
+
+    * Reviews for products are visible to all users of the wesbite, but only those users who have created accounts can make new reviews.
+
+- ### Mobile and Tablet Users
+
+    i. As a mobile user, I would like a responsive website that doesn't lack any features that the main desktop site has.
+
+    * Mobile users have access to the same content and features as all users, the one caviat being that the nav bar is collapsed to save on screen space, but this still holds the same functionality as the desktop site, just without the same look.
 
 <hr>
 
@@ -309,47 +353,56 @@ This website was tested on:<br>
 ### HTML Code Validation
 
 #### Landing Page
-- The landing page showed a few errors in my HTML code, such as an unpaired head tag, 'Element li not allowed as child of element nav in this context.' and a stray script tag. When searching through my code using the built in GitPod search feature, I was unable to find any of these actual errors in my code, there was no unpaired head tag, no list item a child of a nav element, and no stray script tag.
+- The landing page showed a few errors in my HTML code, such as an unpaired head tag, 'Element li not allowed as child of element nav in this context.' and a stray script tag. When searching through my code using the built in GitPod search feature, I was able to find these errors in the allauth accounts base.html in which all of these other pages was extending from.
 - Other erros included img tags with no alt attributes and a h4 being the child of a span element this was easily fixed.
-- Another error was to do with duplicate element ID's but as this is due to the template including the mobile-nav.html and main-nav.html, this error occcurs.
+- Another error was to do with duplicate element ID's but as this is due to the template including the mobile-nav.html and main-nav.html, these errors have been fixed as these were extending from a base template, so removing the tags from the extended template fixed this error.
+- These errors have been fixed, and each page now passes through the validator with no errors or warnings.
 
 #### All Products Page
-- The all products page produced the same errors as above, but upon searching my code, these errors could not be found.
+- There was an error due to multiple uses of the main tag, the duplicate tags have now been removed.
+- This page passes validation with no errors or warnings.
 
 #### Product Detail Page
-- The product-detail page produced the same errors as above, but upon searching my code, these errors could not be found.
+- There was an error due to multiple uses of the main tag, the duplicate tags have now been removed.
+- This page passes validation with no errors or warnings.
 
 #### Bag Page
-- The product-detail page produced the same errors as above, but upon searching my code, these errors could not be found.
-- Another error was due to multiple uses of the main tag, the duplicate tag has now been removed.
+- There was an error due to multiple uses of the main tag, the duplicate tags have now been removed.
+- This page passes validation with no errors or warnings.
 
 #### Checkout Page
-- The checkout page produced the same errors as above, but upon searching my code, these errors could not be found.
+- There was an error due to multiple uses of the main tag, the duplicate tags have now been removed.
+- This page passes validation with no errors or warnings.
 
 #### Checkout Success Page
-- The checkout success page produced the same errors as above, but upon searching my code, these errors could not be found.
+- There was an error due to multiple uses of the main tag, the duplicate tags have now been removed. 
+- This page passes validation with no errors or warnings.
 
 #### Login Page
-- The login page produced the same errors as above, but upon searching my code, these errors could not be found.
-- Another error was due to multiple uses of the main tag, the duplicate tag has now been removed.
+- There was an error due to multiple uses of the main tag, the duplicate tags have now been removed.
+- This page passes validation with no errors or warnings.
 
 #### Log Out Page
-- The logout page produced the same errors as above, but upon searching my code, these errors could not be found.
+- There was an error due to multiple uses of the main tag, the duplicate tags have now been removed.
+- This page passes validation with no errors or warnings.
 
 #### Profile Page
-- The online validator was unalbe to complete this check as it does not have the permission as it is not logged in.
+- The online validator was unable to complete this check as it does not have the permission as it is not logged in, but as this page follows the same structure as all other pages, it is safe to assume that this also passes validation.
 
 #### Product Management Page
-- The product management page produced the same errors as above, but upon searching my code, these errors could not be found.
-- Another error was due to multiple uses of the main tag, the duplicate tag has now been removed.
+- There was an error due to multiple uses of the main tag, the duplicate tags have now been removed.
+- This page passes validation with no errors or warnings.
 
 #### Articles Page
-- The articles page produced the same errors as above, but upon searching my code, these errors could not be found.
-- Another error was due to multiple uses of the main tag, the duplicate tag has now been removed.
+- There was an error due to multiple uses of the main tag, the duplicate tags have now been removed.
+- This page passes validation with no errors or warnings.
 
 #### Individual Article Page
-- The individual article page produced the same errors as above, but upon searching my code, these errors could not be found.
-- Another error was due to multiple uses of the main tag, the duplicate tag has now been removed.
+- There was an error due to multiple uses of the main tag, the duplicate tags have now been removed.
+- This page passes validation with no errors or warnings.
+
+#### Password Reset Pages (Allauth)
+- These pages pass validation with no errors or warnings.
 
 ## CSS Validator (W3C):
 
