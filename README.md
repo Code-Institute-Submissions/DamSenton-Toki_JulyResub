@@ -2,7 +2,7 @@
 
 ## Milestone Project 4
 
-![ Responive Design](media/responsive.JPG)
+![Responive Design](media/responsive.JPG)
 
 ## Introduction
 
