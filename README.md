@@ -344,15 +344,13 @@ This website was tested on:<br>
 
     * Mobile users have access to the same content and features as all users, the one caviat being that the nav bar is collapsed to save on screen space, but this still holds the same functionality as the desktop site, just without the same look.
 
-    * The one issue with this user story is when users on certain, smaller mobile devices, view the page in a landscape view. When this view is used, the navigation bar is not fully accessible, and some of the options do not show. But I feel like I have come to a good compromise and users are still able to access the whole site, but they would have to use a different route. In terms of fixing this, I have explored resiszing, and have done the best I can without causing degradation to the website as a whole. As for a priority, this way of viewing a webpage is extremely unlikely so this fix is not a high priority, as it does not take away from the mobile experience, as users get the best experience in a portrait view.
+    * The one issue with this user story is when users on certain, smaller mobile devices, view the page in a landscape view. When this view is used, the navigation bar is not fully accessible, and some of the options do not show. But I feel like I have come to a good compromise and users are still able to access the whole site, but they would have to use a different route. In terms of fixing this, I have explored resiszing, and have done the best I can without causing degradation to the website as a whole. As for a priority, after consulting a tutor, they informed me that this way of viewing a webpage is extremely unlikely so this fix is not a high priority, as it does not take away from the mobile experience, as users get the best experience in a portrait view.
 
 <hr>
 
 ## Code Validation
 
 ### HTML Validator (W3C):
-
-### HTML Code Validation
 
 #### Landing Page
 - The landing page showed a few errors in my HTML code, such as an unpaired head tag, 'Element li not allowed as child of element nav in this context.' and a stray script tag. When searching through my code using the built in GitPod search feature, I was able to find these errors in the allauth accounts base.html in which all of these other pages was extending from.
